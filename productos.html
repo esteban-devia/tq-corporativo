@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Tecnoquímicas - Nuestros Productos</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="home.html">Inicio</a>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Así Cambiamos El Mundo<img src="imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="testimonio.html">Testimonio</a>
+                        <a href="beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MENU MOBILE -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="quienes-somos/mision.html">Misión</a>
+                                <a href="quienes-somos/vision.html">Visión</a>
+                                <a href="quienes-somos/credo.html">Credo TQ</a>
+                                <a href="quienes-somos/historia.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="nuestra-gente/aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="productmain">
+            <h1>Productos</h1>
+            <div class="boxleft">
+                <div class="searchMob">
+                    <input type="search" name="searchProduct" id="searchProduct" placeholder="Busca un producto">
+                </div>
+                <div class="filtersmain">
+                    <div class="filterTitle" onclick="openFilterModule()">
+                        <h2>Filtros</h2>
+                        <img src="imgs/products/down-arrow.svg" alt="">
+                    </div>
+                    <form class="filters" name="productFilter" id="productFilter">
+                        <div class="filtersinner">
+                            <div class="search">
+                                <input type="search" name="searchProduct" id="searchProduct" placeholder="Busca un producto">
+                            </div>
+                            <div class="filterSelect">
+                                <select name="line" id="line">
+                                    <option value="" disabled hidden selected>Línea</option>
+                                    <option value="line1">Línea 1</option>
+                                    <option value="line2">Línea 2</option>
+                                    <option value="line3">Línea 3</option>
+                                </select>
+                                <img src="imgs/products/down-arrow.svg" alt="">
+                            </div>
+                            <div class="filterSelect">
+                                <select name="group" id="group">
+                                    <option value="" disabled hidden selected>Grupo</option>
+                                    <option value="group1">Grupo 1</option>
+                                    <option value="group2">Grupo 2</option>
+                                    <option value="group3">Grupo 3</option>
+                                </select>
+                                <img src="imgs/products/down-arrow.svg" alt="">
+                            </div>
+                            <div class="filterSelect">
+                                <select name="category" id="category">
+                                    <option value="" disabled hidden selected>Categoría</option>
+                                    <option value="category1">Categoría 1</option>
+                                    <option value="category2">Categoría 2</option>
+                                    <option value="category3">Categoría 3</option>
+                                </select>
+                                <img src="imgs/products/down-arrow.svg" alt="">
+                            </div>
+                            <div class="filterSelect">
+                                <select name="subcategory" id="subcategory">
+                                    <option value="" disabled hidden selected>Subcategoría</option>
+                                    <option value="subcategory1">Subcategoría 1</option>
+                                    <option value="subcategory2">Subcategoría 2</option>
+                                    <option value="subcategory3">Subcategoría 3</option>
+                                </select>
+                                <img src="imgs/products/down-arrow.svg" alt="">
+                            </div>
+                            <div class="filterSelect">
+                                <select name="branch" id="branch">
+                                    <option value="" disabled hidden selected>Marca</option>
+                                    <option value="branch1">Marca 1</option>
+                                    <option value="branch2">Marca 2</option>
+                                    <option value="branch3">Marca 3</option>
+                                </select>
+                                <img src="imgs/products/down-arrow.svg" alt="">
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" name="order" id="ascendent">
+                                <label for="ascendent">De la A-Z</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="radio" name="order" id="descendent">
+                                <label for="ascendent">De la Z-A</label>
+                            </div>
+                        </div>
+                        <button type="submit" form="productFilter">Filtrar</button>
+                    </form>
+                </div>
+                <div class="categories">
+                    <div class="categoriesinner">
+                        <div class="filterTitle" onclick="openCategoryrModule()">
+                            <h2>Categorías</h2>
+                            <img src="imgs/products/down-arrow.svg" alt="">
+                        </div>
+                        <div class="categorylist">
+                            <div class="singlecategory">
+                                <div class="categorytitle" onclick="openCategory(0)">
+                                    <span>Cuidado De La Salud</span>
+                                    <img src="imgs/products/down-arrow.svg" alt="">
+                                </div>
+                                <div class="categoryoptions">
+                                    <a href="">Medicamentos venta libre</a>
+                                    <a href="" class="active">Medicamentos con prescripción</a>
+                                    <a href="">Productos para la herida</a>
+                                    <a href="">Algodón y copitos</a>
+                                    <a href="">Análisis genético</a>
+                                </div>
+                            </div>
+                            <div class="singlecategory">
+                                <div class="categorytitle" onclick="openCategory(1)">
+                                    <span>Cuidado Personal</span>
+                                    <img src="imgs/products/down-arrow.svg" alt="">
+                                </div>
+                                <div class="categoryoptions">
+                                    <a href="">Subcategoría 1</a>
+                                    <a href="">Subcategoría 2</a>
+                                    <a href="">Subcategoría 3</a>
+                                    <a href="">Subcategoría 4</a>
+                                    <a href="">Subcategoría 5</a>
+                                </div>
+                            </div>
+                            <div class="singlecategory">
+                                <div class="categorytitle" onclick="openCategory(2)">
+                                    <span>Cuidado Para El Bebé</span>
+                                    <img src="imgs/products/down-arrow.svg" alt="">
+                                </div>
+                                <div class="categoryoptions">
+                                    <a href="">Subcategoría 1</a>
+                                    <a href="">Subcategoría 2</a>
+                                    <a href="">Subcategoría 3</a>
+                                    <a href="">Subcategoría 4</a>
+                                    <a href="">Subcategoría 5</a>
+                                </div>
+                            </div>
+                            <div class="singlecategory">
+                                <div class="categorytitle" onclick="openCategory(3)">
+                                    <span>Adhesivos</span>
+                                    <img src="imgs/products/down-arrow.svg" alt="">
+                                </div>
+                                <div class="categoryoptions">
+                                    <a href="">Subcategoría 1</a>
+                                    <a href="">Subcategoría 2</a>
+                                    <a href="">Subcategoría 3</a>
+                                    <a href="">Subcategoría 4</a>
+                                    <a href="">Subcategoría 5</a>
+                                </div>
+                            </div>
+                            <div class="singlecategory">
+                                <div class="categorytitle" onclick="openCategory(4)">
+                                    <span>Agroveterinaria</span>
+                                    <img src="imgs/products/down-arrow.svg" alt="">
+                                </div>
+                                <div class="categoryoptions">
+                                    <a href="">Subcategoría 1</a>
+                                    <a href="">Subcategoría 2</a>
+                                    <a href="">Subcategoría 3</a>
+                                    <a href="">Subcategoría 4</a>
+                                    <a href="">Subcategoría 5</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxright">
+                <h1>Productos</h1>
+                <div class="productsgrid">
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acetaminofén + Codeína MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acetaminofén Forte MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acetaminofén MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acetaminofén Niños</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acetaminofén Forte MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Aciclovir MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acid-Ness MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Ácido Fusídico</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Acido Mefenamico MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Across MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Actinic MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Aflux Efervescente MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Aflux Jarabe MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Aftosa MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productsingle">
+                        <img src="imgs/products/caja-main-SDFL.png" alt="">
+                        <div class="productName">
+                            <p>Alarm MK</p>
+                            <div class="filing">
+                                <a href="productos/interna-productos.html">Ver presentaciones &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="home.html">Inicio</a></span><img src="imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="quienes-somos/mision.html">Misión</a></li>
+                            <li><a href="quienes-somos/vision.html">Visión</a></li>
+                            <li><a href="quienes-somos/credo.html">Credo TQ</a></li>
+                            <li><a href="quienes-somos/historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="nuestra-gente/aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/products.js"></script>
+</body>
+
+</html>

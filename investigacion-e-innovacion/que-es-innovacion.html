@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/innovpost.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>Tecnoquímicas - Investigación e Innovación</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="../home.html">Inicio</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="#">Así Cambiamos El Mundo<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="../nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="../investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="../testimonio.html">Testimonio</a>
+                        <a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="../noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem">
+                    <a href="../productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="../contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="../imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="../quienes-somos/vision.html">Visión</a>
+                                <a href="../quienes-somos/credo.html">Credo TQ</a>
+                                <a href="../quienes-somos/mision.html">Misión</a>
+                                <a href="../quienes-somos/historia.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="../investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="../testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="../productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mainbanner mainbannersec">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/innovation/que-es-innovacion-mob.jpg">
+                <img src="../imgs/innovation/que-es-innovacion.jpg" alt="">
+            </picture>
+            <div class="overBanner overbannersec overbannerlarge">
+                <div class="textBanner">
+                    <h1 class="bannertitle">Investigación e Innovación</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="innovPost">
+            <div class="back showE">
+                <a href="../investigacion-e-innovacion.html">
+                    < Atras</a>
+            </div>
+            <div class="showE">
+                <h2>¿Qué es innovación para TQ?</h2>
+                <p class="innovPostdate">17 de diciembre, 2019</p>
+                <div class="innovModule">
+                    <img src="../imgs/innovation/objetivo-estrategico.jpg" alt="">
+                    <div class="innovText">
+                        <p>Implementar algo nuevo, que solucione un problema o aproveche una oportunidad e incremente el valor al cliente y/o la empresa.</p>
+                        <span>Objetivo Estratégico Área de Innovación Corporativa</span>
+                        <ul>
+                            <li>Desarrollar y potenciar la capacidad de innovación de TQ</li>
+                            <li>Facilitar y acompalar los procesos de innovación corporativos</li>
+                            <li>Liderar el desarrollo de las habilidades creativas y las competencias de innovación de TQ</li>
+                            <li>Fomentar una cultura de innovación dentro de la empresa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="showE">
+                <div class="moduleTitle">
+                    <h2>Pilar 1</h2>
+                    <span>Facilitar y acompañar los proyectos de innovación de la compañía</span>
+                </div>
+                <div class="innovModule revert">
+                    <img src="../imgs/innovation/pilar1.jpg" alt="">
+                    <div class="innovText">
+                        <p>Temas comunmente trabajados:</p>
+                        <ul>
+                            <li>Relacionamiento con clientes y consumidores</li>
+                            <li>Identidad de marca</li>
+                            <li>Nuevos productos</li>
+                            <li>Campalas RRHH</li>
+                            <li>Reducción de costos</li>
+                            <li>Actividades al canal</li>
+                            <li>Desarrollo de nuevos negocios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="showE">
+                <div class="moduleTitle">
+                    <h2>Pilar 2</h2>
+                    <span>Liderar el desarrollo de las habilidades creativas y competencias de innovación</span>
+                    <img src="../imgs/innovation/model.jpg" alt="">
+                </div>
+                <div class="innovModule">
+                    <img src="../imgs/innovation/pilar2.jpg" alt="">
+                    <div class="innovText">
+                        <span>¿Qué hemos logrado?</span>
+                        <ul>
+                            <li>450+ personas entrenadas</li>
+                            <li>200+ proyectos individuales</li>
+                            <li>20+ proyectos grupales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="showE">
+                <div class="moduleTitle">
+                    <h2>Pilar 3</h2>
+                    <span>Fomentar una cultura de innovación dentro de la empresa</span>
+                </div>
+                <div class="innovModule revert">
+                    <img src="../imgs/innovation/pilar3.jpg" alt="">
+                    <div class="innovText">
+                        <ul>
+                            <li>Plan de comunicación interna</li>
+                            <li>Charlas con conferencistas nacionales e internacionales</li>
+                            <li>Retos de innovación abierta</li>
+                            <li>Participación en comités y grupos de innovación regionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="showE">
+                <div class="share">
+                    <p>Comparte en:</p>
+                    <a href="" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt=""></a>
+                    <a href="" target="_blank"><img src="../imgs/header/facebook-blue.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="../home.html">Inicio</a></span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="../quienes-somos/mision.html">Misión</a></li>
+                            <li><a href="../quienes-somos/vision.html">Visión</a></li>
+                            <li><a href="../quienes-somos/credo.html">Credo TQ</a></li>
+                            <li><a href="../quienes-somos/historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="../investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="../testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="../productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

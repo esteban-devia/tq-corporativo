@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/betterworld.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>Tecnoquímicas - Quiénes Somos</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="../home.html">Inicio</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="#">Así Cambiamos El Mundo<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="../nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="../investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="../testimonio.html">Testimonio</a>
+                        <a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="../noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem">
+                    <a href="../productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="../contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="../imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="mision.html">Misión</a>
+                                <a href="vision.html">Visión</a>
+                                <a href="credo.html">Credo TQ</a>
+                                <a href="hostoria.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="../investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="../testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="../productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mainbanner aboutus">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/betterworld/mundo-mejor-mob.jpg">
+                <img src="../imgs/aboutus/quien-es-tq.jpg" alt="">
+            </picture>
+        </div>
+    </section>
+    <section>
+        <div class="sectionmenu aboutus">
+            <a href="quien-es-tq.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/IsTQ-icon.png" alt="">
+                <p>Quién es TQ</p>
+            </a>
+            <a href="vision.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/vision-icon.png" alt="">
+                <p>Visión</p>
+            </a>
+            <a href="mision.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/mision-icon.png" alt="">
+                <p>Misión</p>
+            </a>
+            <a href="credo.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/credo-icon.png" alt="">
+                <p>Credo</p>
+            </a>
+            <a href="historia.html" class="sectionmenuopt aboutus active">
+                <img src="../imgs/aboutus/history-icon-active.png" alt="">
+                <p>Historia</p>
+            </a>
+        </div>
+        <div class="sectionmenu-mob">
+            <div class="sectionmenuopt-mob active" onclick="openBWmenu()">
+                <div>
+                    <img src="../imgs/aboutus/history-icon-active.png" alt="">
+                    <p>Historia</p>
+                </div>
+                <img src="../imgs/aboutus/down-arrow-white.svg" alt="">
+            </div>
+            <div class="sectionmenulist d-none">
+                <div>
+                    <a href="quien-es-tq.html">
+                        <img src="../imgs/aboutus/IsTQ-icon.png" alt="">
+                        <p>Quién es TQ</p>
+                    </a>
+                    <a href="mision.html">
+                        <img src="../imgs/aboutus/mision-icon.png" alt="">
+                        <p>Misión</p>
+                    </a>
+                    <a href="vision.html">
+                        <img src="../imgs/aboutus/vision-icon.png" alt="">
+                        <p>Visión</p>
+                    </a>
+                    <a href="credo.html">
+                        <img src="../imgs/aboutus/credo-icon.png" alt="">
+                        <p>Credo</p>
+                    </a>
+                    <a href="historia.html" class="active">
+                        <img src="../imgs/aboutus/history-icon.png" alt="">
+                        <p>Historia</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="historyMain">
+            <div class="historyControls">
+                <div class="historyLeft">
+                    <div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(0,0)">1934</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                            </div>
+                        </div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(1,1)">1951</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                            </div>
+                        </div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(5,2)">1993</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                            </div>
+                        </div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(6,3)">2009</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                            </div>
+                        </div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(7,4)">2018</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                            </div>
+                        </div>
+                        <div class="singleyear">
+                            <span onclick="currentYear(8,5)">2019</span>
+                            <div class="groupdots-mob">
+                                <span class="singledot-mob flag"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                                <span class="singledot-mob"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playButton">
+                        <span id="playSlider">PLAY</span>
+                        <span id="stopSlider">STOP</span>
+                    </div>
+                    <div class="arrowsH">
+                        <div class="prev" onclick="plusSlide(-1)">
+                            <img src="../imgs/credo/uparrow.png" alt="">
+                        </div>
+                        <div class="next" onclick="plusSlide(1)">
+                            <img src="../imgs/credo/uparrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="historyRight">
+                    <div class="monthYear">
+                        <p>AGOSTO</p>
+                        <span></span>
+                        <p>1934</p>
+                    </div>
+                    <div class="monthYear">
+                        <p>ENERO</p>
+                        <span></span>
+                        <p>1951</p>
+                    </div>
+                    <div class="monthYear">
+                        <p>1993</p>
+                        <span></span>
+                    </div>
+                    <div class="monthYear">
+                        <p>2009</p>
+                        <span></span>
+                    </div>
+                    <div class="monthYear">
+                        <p>2018</p>
+                        <span></span>
+                    </div>
+                    <div class="monthYear">
+                        <p>2019</p>
+                        <span></span>
+                    </div>
+                    <div class="timeline">
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(0)"></span>
+                        </div>
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(1)"></span>
+                            <span class="singledot" onclick="currentSlide(2)"></span>
+                            <span class="singledot" onclick="currentSlide(3)"></span>
+                            <span class="singledot" onclick="currentSlide(4)"></span>
+                        </div>
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(5)"></span>
+                        </div>
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(6)"></span>
+                        </div>
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(7)"></span>
+                        </div>
+                        <div class="groupdots">
+                            <span class="singledot flag" onclick="currentSlide(8)"></span>
+                            <span class="singledot" onclick="currentSlide(9)"></span>
+                            <span class="singledot" onclick="currentSlide(10)"></span>
+                            <span class="singledot" onclick="currentSlide(11)"></span>
+                            <span class="singledot" onclick="currentSlide(12)"></span>
+                            <span class="singledot" onclick="currentSlide(13)"></span>
+                            <span class="singledot" onclick="currentSlide(14)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo01-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo01-mob2.jpg">
+                        <img src="../imgs/credo/credo01.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>AGOSTO</p>
+                            <span></span>
+                            <p>1934</p>
+                        </div>
+                        <p class="HistMainText">Fundada en Bogotá (Colombia) en 1934,</p>
+                        <p class="HistThirdText">Durante sus primeros años se dedicó a importar y comercializar productos medicinales de compañías norteamericanas y europeas.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo02-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo02-mob2.jpg">
+                        <img src="../imgs/credo/credo02.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>ENERO</p>
+                            <span></span>
+                            <p>1951</p>
+                        </div>
+                        <p class="HistMainText">Tecnoquímicas es un grupo empresarial colombiano líder en la industria farmacéutica y de consumo masivo,</p>
+                        <p class="HistThirdText">Comprometido desde hace más de 85 años con el crecimiento económico y el avance social de las comunidades de América Latina a las que llega con productos Totalmente Confiables.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo03-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo03-mob2.jpg">
+                        <img src="../imgs/credo/credo03.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>ENERO</p>
+                            <span></span>
+                            <p>1951</p>
+                        </div>
+                        <p class="HistMainText">En 1951 inauguró su primera planta,</p>
+                        <p class="HistThirdText">Y desde entonces realiza esfuerzos sostenidos para permanecer a la vanguardia en tecnología e infraestructura moderna, que responda a estándares y exigencias de la industria farmacéutica internacional.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo04-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo04-mob2.jpg">
+                        <img src="../imgs/credo/credo04.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>ENERO</p>
+                            <span></span>
+                            <p>1951</p>
+                        </div>
+                        <p class="HistMainText">Por su compromiso con la calidad en xxxx fue elegida para manufacturar y comercializar en Colombia productos de prestigiosas multinacionales</p>
+                        <p class="HistThirdText">Como Bayer, Merck Sharp and Dhome, Allergan, Procter & Gamble y Smith Kline & French, entre otras.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo05-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo05-mob2.jpg">
+                        <img src="../imgs/credo/credo05.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>ENERO</p>
+                            <span></span>
+                            <p>1951</p>
+                        </div>
+                        <p class="HistMainText">Desde xxxx, la compañía centró sus esfuerzos en el desarrollo de sus marcas propias,</p>
+                        <p class="HistThirdText">Entre ellas, MK, Winny, Lua, Yodora, Cure Band, Noraver, Colbón, Crema No. 4, Ibuflash, Vitafull y Content. Muchas de ellas son líderes en las áreas de la salud, cuidado del bebé, aseo personal y del hogar, adhesivos, agrícola
+                            y veterinaria.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo06-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo06-mob2.jpg">
+                        <img src="../imgs/credo/credo06.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>1993</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">La compañía ingresó con algunos de sus productos en el mercado del Ecuador,</p>
+                        <p class="HistThirdText">País en el que cuenta con sucursales en Quito y Guayaquil.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo07-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo07-mob2.jpg">
+                        <img src="../imgs/credo/credo07.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2009</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Como parte de su proyecto de internacionalización adquirió Teramed,</p>
+                        <p class="HistThirdText">Compañía líder del sector farmacéutico en El Salvador. Así, Tecnoquímicas inició su presencia directa en Centroamérica, amplió sus mercados y dio un paso muy importante en cumplimiento de su objetivo de llevar salud y bienestar
+                            a más personas en más países.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo08-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo08-mob2.jpg">
+                        <img src="../imgs/credo/credo08.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2018</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Tecnoquímicas le compró a Bayer la corporación Bonima S.A. de C.V., dueña de la marca MK en 23 países,</p>
+                        <p class="HistThirdText">Y su planta de El Salvador, la cual cumple con los más altos estándares de la industria internacional. De esta forma, Tecnoquímicas se convirtió en el titular único de MK en Centroamérica, el Caribe y Sudamérica (exceptuando Venezuela).</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo09-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo09-mob2.jpg">
+                        <img src="../imgs/credo/credo09.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Su consolidación le permitirá especializar sus sedes productivas, tanto las actuales en Colombia y El Salvador como la nueva planta adquirida,</p>
+                        <p class="HistThirdText">Para fortalecer aún más el mercado latinoamericano con productos que cumplen con los más altos estándares de calidad, seguridad y eficacia. Asimismo, será importante para vigorizar, entre los profesionales de la salud y la comunidad
+                            en general, el reconocimiento de Tecnoquímicas como una compañía de talla internacional que desarrolla medicamentos Totalmente Confiables.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo10-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo10-mob2.jpg">
+                        <img src="../imgs/credo/credo10.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Tecnoquímicas está presente con operación propia, además de Colombia, en Ecuador, Guatemala, Honduras, Panamá, Nicaragua, República Dominicana, Costa Rica y El Salvador.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo11-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo11-mob2.jpg">
+                        <img src="../imgs/credo/credo11.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Hoy cuenta con 8 sedes productivas en Colombia y 3 plantas en El Salvador,</p>
+                        <p class="HistThirdText">En las cuales fabrica alrededor de 4.000 referencias para toda la región.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo12-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo12-mob2.jpg">
+                        <img src="../imgs/credo/credo12.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Se distingue por sus aportes a la investigación y el desarrollo de productos innovadores para la salud y el bienestar</p>
+                        <p class="HistThirdText">De las personas en Colombia y varios países de América en los que está presente. De hecho, es reconocida como una compañía pionera y líder en estudios de bioequivalencia y en el apoyo a instituciones del sector.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo13-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo13-mob2.jpg">
+                        <img src="../imgs/credo/credo13.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">En el 2019 sus ventas alcanzaron 1,83 billones de pesos,</p>
+                        <p class="HistThirdText">Con todas las operaciones nacionales y extranjeras.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo14-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo14-mob2.jpg">
+                        <img src="../imgs/credo/credo14.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">TQ es la primera compañía farmacéutica colombiana gracias a su conocimiento adquirido,</p>
+                        <p class="HistThirdText">La experiencia, la permanente modernización de su infraestructura y la capacidad de sus profesionales, que le permiten ser líder en el cuidado del bebé, y una de las más importantes en la industria del cuidado personal y el aseo
+                            del hogar.</p>
+                    </div>
+                </div>
+                <div class="sliderContent">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo15-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo15-mob2.jpg">
+                        <img src="../imgs/credo/credo15.jpg" alt="">
+                    </picture>
+                    <div class="sliderText">
+                        <div class="monthYear monthMob">
+                            <p>2019</p>
+                            <span></span>
+                        </div>
+                        <p class="HistMainText">Estos logros son fruto del trabajo responsable, innovador y comprometido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="../home.html">Inicio</a></span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="credo.html">Credo TQ</a></li>
+                            <li><a href="historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="../investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="../testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="../productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/betterworld.js"></script>
+    <script src="../js/history.js"></script>
+</body>
+
+</html>

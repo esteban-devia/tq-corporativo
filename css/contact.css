@@ -1,0 +1,696 @@
+.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2rem 12rem;
+}
+
+.contact img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact div {
+    margin-right: 5rem;
+}
+
+.contact h2 {
+    font-family: 'NeoSans-B';
+    color: #56B1DE;
+}
+
+.contact p {
+    color: #6E6E6E;
+}
+
+.contact p span {
+    font-family: 'NeoSans-B';
+}
+
+.addressGrid {
+    margin: 0 12rem;
+    margin-bottom: 5rem;
+}
+
+.countryName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #56B1DE;
+    font-family: 'NeoSans-B';
+    cursor: pointer;
+}
+
+.countryName h2 {
+    margin-right: 2rem;
+    min-width: fit-content;
+}
+
+.countryName span {
+    background-image: linear-gradient(to right, #56B1DE, 31%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 12px 1px;
+    background-repeat: repeat-x;
+    height: 1px;
+    width: -webkit-fill-available;
+}
+
+.countryName img {
+    margin-left: 2rem;
+    transition: transform;
+    transition-duration: 0.2s;
+}
+
+.countryName img.rotate {
+    transform: rotate(180deg);
+    transition: transform;
+    transition-duration: 0.2s;
+}
+
+.moduleList {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.moduleList.show {
+    display: flex;
+}
+
+.addressSingle {
+    width: 31%;
+    border: 1px solid #DEDEDF;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+.addressSingle:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.contactInfo {
+    padding: 1rem 2rem;
+}
+
+.contactInfo div {
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+}
+
+.addressSingle h3 {
+    font-family: 'NeoSans-B';
+    color: #56B1DE;
+}
+
+.addressSingle ul {
+    list-style: none;
+    color: #6E6E6E;
+    padding-left: 1rem;
+}
+
+.addressSingle ul li,
+.addressSingle span {
+    line-height: 1.5rem;
+}
+
+.addressSingle ul li::before {
+    content: "\2022";
+    color: #56B1DE;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li.location {
+    list-style: none;
+}
+
+span.phone {
+    display: block;
+    text-align: right;
+}
+
+.addressGrid h2 {
+    font-family: 'NeoSans-B';
+    color: #56B1DE;
+}
+
+.faqMain {
+    font-size: 0.9rem;
+}
+
+.question.show {
+    background: #F9F9F9;
+}
+
+.questionsingle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    border-top: 1px solid #DEDEDF;
+    font-family: 'NeoSans-B';
+    color: #6E6E6E;
+    cursor: pointer;
+}
+
+.question:last-of-type .questionsingle {
+    border-bottom: 1px solid #DEDEDF;
+}
+
+.questionsingle img {
+    transition: transform;
+    transition-duration: 0.2s;
+    margin-left: 1rem;
+}
+
+.questionsingle img.rotate {
+    transform: rotate(180deg);
+    transition: transform;
+    transition-duration: 0.2s;
+}
+
+.answerModule {
+    display: none;
+    padding: 0 6.5rem;
+    color: #6E6E6E;
+    padding-bottom: 1.5rem;
+}
+
+.answerModule.show {
+    display: block;
+}
+
+.answer ul {
+    list-style: none;
+}
+
+.answer ul span {
+    font-family: 'NeoSans-B';
+    line-height: 1.5rem;
+}
+
+.answer li {
+    line-height: 1.5rem;
+}
+
+.answer li::before {
+    content: "-";
+    display: inline-block;
+    width: 1rem;
+}
+
+.answer a {
+    font-family: 'NeoSans-B';
+    color: #008ACD;
+}
+
+.answer span {
+    font-family: 'NeoSans-B';
+}
+
+.ethicalLine,
+.channels {
+    margin: 0 12rem;
+    margin-bottom: 4rem;
+    color: #6E6E6E;
+}
+
+.reportchannels {
+    width: 50%;
+}
+
+.ethicalLine h2,
+.reportchannels h2 {
+    font-family: 'NeoSans-B';
+    color: #56B1DE;
+}
+
+.ethicalLine p,
+.reportchannels p,
+.reportchannels ul li {
+    line-height: 1.5rem;
+}
+
+.ethicalLine span {
+    font-family: 'NeoSans-B';
+}
+
+.channels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channels img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 3rem;
+}
+
+.reportchannels ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.reportchannels ul li::before {
+    content: "\2022";
+    color: #56B1DE;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.reportchannels div {
+    width: 100%;
+    background-color: #56B1DE;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.reportchannels div a {
+    font-size: 1.1rem;
+    color: #FFFFFF;
+}
+
+.clientService {
+    margin: 0 12rem;
+    margin-bottom: 4rem;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleinput {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-bottom: 1rem;
+}
+
+.formRow label {
+    color: #6E6E6E;
+    margin-bottom: 0.2rem;
+    font-family: 'NeoSans-M';
+}
+
+.singleinput.error label {
+    color: red;
+}
+
+.singleinput select,
+.singleinput input {
+    background-color: #F9F9F9;
+    font-family: 'NeoSans-R';
+    font-size: 0.9rem;
+    color: #6E6E6E;
+    padding: 0.5rem;
+    border: 1px solid #DEDEDF;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+}
+
+.formSelect {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.formSelect select {
+    width: 100%;
+}
+
+.formSelect img {
+    position: absolute;
+    padding-right: 0.5rem;
+}
+
+.singleinput.error select,
+.singleinput.error input {
+    border-color: red;
+}
+
+.singleinput select {
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.singleinput input {
+    padding: 0.5rem 0.8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::placeholder {
+    color: #C4C4C4;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #C4C4C4;
+}
+
+.singleinput span {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #C4C4C4;
+}
+
+.singleinput input:focus+span,
+.singleinput select:focus+span,
+.singleinput input:not(:focus):not(:placeholder-shown)+span {
+    display: none;
+}
+
+.singleinput .placeholder.d-none {
+    display: none;
+}
+
+.formRow.single {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow label {
+    color: #6E6E6E;
+    margin-bottom: 0.2rem;
+    font-family: 'NeoSans-M';
+}
+
+.formRow.single textarea {
+    font-family: 'NeoSans-R';
+    font-size: 1rem;
+    color: #C4C4C4;
+    background-color: #F9F9F9;
+    border: 1px solid #DEDEDF;
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    resize: none;
+    outline: none;
+}
+
+.formRow.single.error label {
+    color: red;
+}
+
+.formRow.single.error textarea {
+    border-color: red;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.checkbox input {
+    -webkit-appearance: none;
+    padding: 0.5rem;
+    border: 1px solid #56B1DE;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.checkbox input:checked {
+    background-image: url(../imgs/contact/checked.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.checkbox.error input {
+    border-color: red;
+}
+
+.checkbox label {
+    font-size: 0.9rem;
+    color: #6E6E6E;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.checkbox a {
+    color: #6E6E6E;
+    font-family: 'NeoSans-M';
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.clientService button {
+    background-color: #56B1DE;
+    padding: 0.5rem 0;
+    color: #FFFFFF;
+    font-family: 'NeoSans-R';
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1680px) {
+    .contact {
+        margin: 2rem 10rem;
+    }
+    .addressGrid {
+        margin: 0 10rem;
+        margin-bottom: 5rem;
+    }
+    .ethicalLine,
+    .channels,
+    .clientService {
+        margin: 0 10rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .contact img {
+        width: 55%;
+    }
+    .addressSingle div {
+        padding: 1rem 2rem;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .contact {
+        margin: 2rem 8rem;
+    }
+    .addressGrid {
+        margin: 0 8rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .contact {
+        margin: 8rem;
+        margin-bottom: 5rem;
+    }
+    .addressGrid.faq {
+        margin-top: 7rem;
+    }
+    .ethicalLine,
+    .channels {
+        margin-top: 7rem;
+    }
+    .formSelect img {
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column-reverse;
+        margin: 2rem 6rem;
+        margin-top: 1rem;
+    }
+    .contact img {
+        width: 100%;
+    }
+    .contact div {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .addressGrid {
+        margin: 0 6rem;
+        margin-bottom: 5rem;
+    }
+    .countryName h2,
+    .countryName img {
+        margin-left: 0;
+        margin-right: 0;
+        min-width: min-content;
+    }
+    .countryName span {
+        display: none;
+    }
+    .moduleList.show {
+        justify-content: center;
+    }
+    .addressSingle {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .addressSingle div {
+        padding: 1rem 2rem;
+    }
+    .addressGrid.faq {
+        margin: 0 3rem;
+        margin-top: 0rem;
+    }
+    .questionsingle {
+        padding: 0 1rem;
+        align-items: baseline;
+    }
+    .answerModule.show {
+        padding: 0px 2rem;
+    }
+    .ethicalLine,
+    .channels,
+    .clientService {
+        margin: 0 5rem;
+        margin-bottom: 4rem;
+    }
+    .reportchannels {
+        width: auto;
+    }
+    .channels {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .channels img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    .formRow {
+        flex-direction: column;
+    }
+    .singleinput {
+        width: 100%;
+    }
+    .clientService button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .contact {
+        flex-direction: column-reverse;
+        margin: 3rem;
+        margin-top: 7rem;
+    }
+    .addressGrid {
+        margin: 0 3rem;
+        margin-bottom: 5rem;
+    }
+    .addressSingle {
+        width: 100%;
+        margin-right: 0;
+    }
+    .addressGrid.faq {
+        margin: 0 2rem;
+        margin-top: 7rem;
+    }
+    .ethicalLine,
+    .channels {
+        margin: 0 2.5rem;
+        margin-bottom: 4rem;
+        margin-top: 7rem;
+    }
+    .channels {
+        margin-top: 0;
+    }
+    .clientService {
+        margin: 0 2.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .contact {
+        margin-top: 0;
+    }
+    .addressGrid {
+        font-size: 0.9rem;
+    }
+    .addressSingle div {
+        padding: 1rem 2rem;
+    }
+    .addressGrid.faq {
+        margin: 0 2rem;
+    }
+    .addressGrid h2 {
+        margin-top: 0;
+    }
+    .questionsingle {
+        padding: 0 1rem;
+    }
+    .answerModule.show {
+        padding: 0 1.5rem;
+    }
+    .ethicalLine {
+        margin-top: 0;
+    }
+    .addressSingle div {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact {
+        margin: 2rem;
+        margin-top: 0rem;
+    }
+    .addressGrid {
+        margin: 0 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contact {
+        margin: 3rem;
+        margin-top: 0rem;
+    }
+    .addressGrid {
+        margin: 0 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contact {
+        margin: 2rem;
+        margin-top: 0rem;
+    }
+    .addressGrid {
+        margin: 0 2rem;
+        margin-bottom: 5rem;
+    }
+}

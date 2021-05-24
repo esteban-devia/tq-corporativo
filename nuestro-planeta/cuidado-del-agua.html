@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/betterworld.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>Tecnoquímicas - Nuestro Planeta</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="../home.html">Inicio</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="#">Así Cambiamos El Mundo<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="../nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="../investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="../testimonio.html">Testimonio</a>
+                        <a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="../noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem">
+                    <a href="../productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="../contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="../imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="../quienes-somos/vision.html">Visión</a>
+                                <a href="../quienes-somos/credo.html">Credo TQ</a>
+                                <a href="../quienes-somos/mision.html">Misión</a>
+                                <a href="../quienes-somos/historia.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="../investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="../testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="../productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mainbanner mainbannersec">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/betterworld/mundo-mejor-mob.jpg">
+                <img src="../imgs/betterworld/mundo-mejor.jpg" alt="">
+            </picture>
+            <div class="overBanner overbannersec overbannerlarge">
+                <div class="textBanner">
+                    <h1 class="bannertitle">Por un mundo mejor</h1>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="sectionmenu">
+            <div class="sectionmenuopt d-none">
+                <img src="../imgs/betterworld/elegir-menu.png" alt="">
+                <p>Elíge un menú</p>
+            </div>
+            <a href="cuidado-del-agua.html" class="sectionmenuopt active">
+                <img src="../imgs/betterworld/nuestro-planeta-active.png" alt="">
+                <p>Nuestro planeta</p>
+            </a>
+            <a href="../nuestra-gente/aporte-al-empleo.html" class="sectionmenuopt">
+                <img src="../imgs/betterworld/nuestro-planeta-active.png" alt="">
+                <p>Nuestra gente</p>
+            </a>
+        </div>
+        <div class="sectionmenu-mob">
+            <div class="sectionmenuopt-mob active" onclick="openBWmenu()">
+                <div>
+                    <img src="../imgs/betterworld/nuestro-planeta-active.png" alt="">
+                    <p>Nuestro planeta</p>
+                </div>
+                <img src="../imgs/betterworld/down-arrow-white.svg" alt="">
+            </div>
+            <div class="sectionmenulist d-none">
+                <div>
+                    <a href="cuidado-del-agua.html" class="active">
+                        <img src="../imgs/betterworld/nuestro-planeta-list-active.png" alt="">
+                        <p>Nuestro planeta</p>
+                    </a>
+                    <a href="../nuestra-gente/aporte-al-empleo.html">
+                        <img src="../imgs/betterworld/nuestro-planeta.png" alt="">
+                        <p>Nuestra gente</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sitecards showE">
+            <p class="sectionintro">En TQ creemos en proteger el medio ambiente como el bien que hará posible la vida a otras generaciones</p>
+            <div class="aportsmain">
+                <div class="aportsgrid">
+                    <div class="aports-left" onclick="moveleft()">
+                        <img src="../imgs/betterworld/left-arrow.png" alt="">
+                    </div>
+                    <a href="cuidado-del-agua.html" class="aportsingle active">
+                        <img src="../imgs/betterworld/cuidado-agua-active.png" alt="">
+                        <h2>Aporte<br><span> al cuidado<br> del agua</span></h2>
+                    </a>
+                    <a href="cuidado-del-suelo.html" class="aportsingle">
+                        <img src="../imgs/betterworld/cuidado-suelo.png" alt="">
+                        <h2>Aporte<br><span> al cuidado<br> del suelo</span></h2>
+                    </a>
+                    <a href="cuidado-del-aire.html" class="aportsingle">
+                        <img src="../imgs/betterworld/cuidado-aire.png" alt="">
+                        <h2>Aporte<br><span> al cuidado<br> del aire</span></h2>
+                    </a>
+                    <a href="uso-racional-de-recursos.html" class="aportsingle">
+                        <img src="../imgs/betterworld/cuidado-aire.png" alt="">
+                        <h2>Aporte<br><span> al uso racional de recursos</span></h2>
+                    </a>
+                    <div class="aports-right" onclick="moveright()">
+                        <img src="../imgs/betterworld/right-arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="dots ourPlanet">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="watercare">
+            <div class="ourplanetDescription showE">
+                <div class="ourplanettext">
+                    <h3>$ 4.400 millones de inversión</h3>
+                    <p>en protección, exploración y mantenimiento de fuentes sostenibles.</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/fuentes-sostenibles.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE revert">
+                <div class="ourplanettext">
+                    <h3>Reducción de 11%</h3>
+                    <p>De consumo en plantas, equivalente a la demanda de consumo de 2.200 personas anualmente.</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/consumo-en-plantas.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE">
+                <div class="ourplanettext">
+                    <h3>Reducción del 90%</h3>
+                    <p>En la carga contaminante de nuestros vertimientos.</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/carga-contaminante.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="../home.html">Inicio</a></span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="../quienes-somos/mision.html">Misión</a></li>
+                            <li><a href="../quienes-somos/vision.html">Visión</a></li>
+                            <li><a href="../quienes-somos/credo.html">Credo TQ</a></li>
+                            <li><a href="../quienes-somos/historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="../investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="../testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="../productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/betterworld.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/betterworld.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>Tecnoquímicas - Nuestra Gente</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="../home.html">Inicio</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="#">Así Cambiamos El Mundo<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="../nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="../investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="../testimonio.html">Testimonio</a>
+                        <a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="../noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem">
+                    <a href="../productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="../contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="../imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="../quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="../quienes-somos/vision.html">Visión</a>
+                                <a href="../quienes-somos/credo.html">Credo TQ</a>
+                                <a href="../quienes-somos/mision.html">Misión</a>
+                                <a href="../quienes-somos/historia.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="../investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="../testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="../productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mainbanner mainbannersec">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/betterworld/mundo-mejor-mob.jpg">
+                <img src="../imgs/betterworld/mundo-mejor.jpg" alt="">
+            </picture>
+            <div class="overBanner overbannersec overbannerlarge">
+                <div class="textBanner">
+                    <h1 class="bannertitle">Por un mundo mejor</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sectionmenu">
+            <div class="sectionmenuopt d-none">
+                <img src="../imgs/betterworld/elegir-menu.png" alt="">
+                <p>Elíge un menú</p>
+            </div>
+            <a href="../nuestro-planeta/cuidado-del-agua.html" class="sectionmenuopt">
+                <img src="../imgs/betterworld/nuestro-planeta.png" alt="">
+                <p>Nuestro planeta</p>
+            </a>
+            <a href="aporte-al-empleo.html" class="sectionmenuopt active">
+                <img src="../imgs/betterworld/nuestra-gente-active.png" alt="">
+                <p>Nuestra gente</p>
+            </a>
+        </div>
+        <div class="sectionmenu-mob">
+            <div class="sectionmenuopt-mob active" onclick="openBWmenu()">
+                <div>
+                    <img src="../imgs/betterworld/nuestra-gente-active.png" alt="">
+                    <p>Nuestra gente</p>
+                </div>
+                <img src="../imgs/betterworld/down-arrow-white.svg" alt="">
+            </div>
+            <div class="sectionmenulist d-none">
+                <div>
+                    <a href="../nuestro-planeta/cuidado-del-agua.html" class="active">
+                        <img src="../imgs/betterworld/nuestro-planeta-list-active.png" alt="">
+                        <p>Nuestro planeta</p>
+                    </a>
+                    <a href="aporte-al-empleo.html">
+                        <img src="../imgs/betterworld/nuestro-planeta.png" alt="">
+                        <p>Nuestra gente</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="showE">
+            <p class="sectionintro">Para TQ, aportar a la creación de un mundo mejor es fundamental. Es por esto por lo que el desarrollo de las comunidades que trabajan junto a nosotros y el cuidado del medio ambiente es una tarea integral que llevamos a cabo a diario.<br><br>NUESTRA
+                GENTE representa lo mejor de nosotros como compañía, y su desarrollo económico y social es una responsabilidad que nos enorgullece cumplir.</p>
+            <div class="aportsgrid people">
+                <a href="aporte-al-empleo.html" class="aportsingle">
+                    <img src="../imgs/betterworld/aporte-empleo.png" alt="">
+                    <h2>Aporte<br><span> al empleo</span></h2>
+                </a>
+                <a href="aporte-a-la-educacion.html" class="aportsingle active">
+                    <img src="../imgs/betterworld/aporte-educacion-active.png" alt="">
+                    <h2>Aporte<br><span> a la educación</span></h2>
+                </a>
+                <a href="aporte-al-bienestar.html" class="aportsingle">
+                    <img src="../imgs/betterworld/aporte-bienestar.png" alt="">
+                    <h2>Aporte<br><span> al bienestar</span></h2>
+                </a>
+            </div>
+        </div>
+        <div class="watercare education">
+            <div class="ourplanetDescription showE">
+                <div class="ourplanettext education">
+                    <p>Para Tecnoquímicas la educación de alta calidad es un componente de vital importancia para garantizar el progreso de las personas y la sociedad Trabajamos en 3 pilares: educación para nuestros colaboradores, para los hijos de nuestros
+                        colaboradores y para las comunidades donde tenemos operación, <span>invirtiendo alrededor de $5.500 millones.</span></p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/inversion-en-educacion.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE revert">
+                <div class="ourplanettext education">
+                    <h3>Educación para los colaboradores:</h3>
+                    <p>Durante el 2019 invertimos aproximadamente <span>$1.600 millones</span> de pesos en programas universitarios de alta calidad (Maestrías, posgrados, idiomas, otros estudios).</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/educacion-colaboradores.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE">
+                <div class="ourplanettext education">
+                    <h3>Educación para los hijos de nuestros colaboradores:</h3>
+                    <p>En TQ queremos que nuestros niños y jóvenes reciban la mejor educación para que en el futuro tengan mayores oportunidades de progreso y generen bienestar a su alrededor. 2.892 hijos de nuestros empleados se beneficiaron de los programas
+                        de educación en 2019, con una inversión total de $3.097 millones para las diferentes etapas de su vida escolar (Colegio, pre icfes, orientación vocacional, universidad).<br><br> Contamos con el CED TQ (Centro de Estimulación y
+                        Desarrollo TQ), dentro de las instalaciones de la compañía en San Nicolás. Un espacio con los más altos estándares de seguridad y calidad, diseñado para fomentar en los niños el aprendizaje lúdico y el desarrollo integral desde
+                        los cuatro meses hasta los cuatro años. 114 niños de nuestra familia TQ disfrutaron durante el 2019 de este beneficio.</p>
+                </div>
+                <div class="ourplanetimg education">
+                    <img src="../imgs/betterworld/educacion-hijos.jpg" alt="" id="childeducation">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE revert education">
+                <div class="ourplanettext education">
+                    <h3>Educación para las comunidades donde operamos</h3>
+                    <p>Buscamos permanentemente el desarrollo científico y educativo de alta calidad en la región, a través del apoyo brindado a la Universidad ICESI desde hace más de 30 años.</p>
+                </div>
+                <div class="ourplanetimg education">
+                    <img src="../imgs/betterworld/educacion-comunidades.jpg" alt="" id="communityed">
+                </div>
+            </div>
+            <p class="educationmidtext showE">Desde el 2013 trabajamos por hacer de Villa Rica, Cauca, un municipio con más y mejores oportunidades a través de la EDUCACIÓN DE ALTA CALIDAD. De esta manera generamos desarrollo integral y mejores condiciones de vida de la población. Villa
+                Rica cuenta con un poco más 18.500 habitantes, donde el 35% de ellos se encuentra en condición de pobreza. Sus niños y jóvenes en edad escolar son aproximadamente 4.100 y solo el 75% de ellos acceden a educación formal. Con esta iniciativa
+                logramos en el 2019 aumentar al 90% el acceso a la educación. Lo que equivale a que beneficiamos cerca de 2800 nuevos estudiantes. (3% de los estudiantes que impactamos son hijos de nuestros empleados).</p>
+        </div>
+    </section>
+    <section>
+        <div class="map showE">
+            <p class="maptextfirst">TQ financia la investigación y publicación de los cuatro tomos de la Historia de la Medicina en Colombia, la obra más completa de la medicina en Colombia.</p>
+            <p class="maptextsec">Los 20.000 ejemplares que se editaron de cada tomo han sido distribuidos sin costo entre bibliotecas públicas, universidades, profesionales de la salud, asociaciones médicas, academias de historia e instituciones de investigación científica,
+                entre otros públicos en Colombia.</p>
+            <p class="maptexttherd">También se han enviado a destacados académicos e investigadores de Europa, Asia, América y Oceanía.</p>
+        </div>
+    </section>
+    <section>
+        <div class="video showE">
+            <iframe src="https://www.youtube-nocookie.com/embed/eFD1IomainM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section>
+        <div class="watercare education">
+            <div class="ourplanetDescription showE">
+                <div class="ourplanettext education">
+                    <h3>Villa Rica</h3>
+                    <p>Villa Rica, Cauca, es el municipio más cercano a Tecnofar y representa nuestro programa social más importante a lo largo de 25 años. Allí hemos realizado un apoyo de desarrollo enfocado en la educación de su población en 4 aspectos.</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/desarrollo.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE revert">
+                <div class="ourplanettext education">
+                    <p>Gestión Educativa, proceso que incluye estructuración de programas de formación académica y pedagógica, acompañamiento en campo y motivación a Directivos Docentes y Docentes.</p>
+                </div>
+                <div class="ourplanetimg">
+                    <img src="../imgs/betterworld/gestion-educativa.png" alt="">
+                </div>
+            </div>
+            <div class="ourplanetDescription showE school">
+                <div class="ourplanettext education">
+                    <div>
+                        <img src="../imgs/betterworld/list-icon.png" alt="">
+                        <p>Preparación para pruebas saber 9º, 10° y 11º.</p>
+                    </div>
+                    <div>
+                        <img src="../imgs/betterworld/list-icon.png" alt="">
+                        <p>Obras de infraestructura, trabajo para mejorar la convivencia y buscar el involucramiento de las familias en la vida escolar.</p>
+                    </div>
+                    <div>
+                        <img src="../imgs/betterworld/list-icon.png" alt="">
+                        <p>Acompañamiento a los egresados de estas instituciones educativas en la construcción de su proyecto de vida.</p>
+                    </div>
+                </div>
+                <div class="ourplanetimg education">
+                    <img src="../imgs/betterworld/ninos-escuela.jpg" alt="" id="schoolkids">
+                </div>
+            </div>
+            <p class="educationmidtext investment showE">Para reconocer el esfuerzo de los jóvenes y facilitar el acceso y permanencia en programas académicos de educación superior de alta calidad, complementamos nuestra intervención con el programa de Becas: Alcanzando Sueños, iniciativa que busca
+                brindar verdaderas oportunidades y fomentar el crecimiento de tejido social entre los jóvenes egresados que hayan obtenido un puntaje en la Prueba Saber 11 superior a 270.<br><span>Los becados reciben un paquete de beneficios que incluyen el pago del 25%</span>                del valor de la matrícula del semestre el cual puede complementarse con un crédito del ICETEX, y un <span>de sostenimiento mensual para transporte, alimentación y fotocopias</span>, además el programa ofrece acompañamiento integral en
+                el proceso de adaptación, incluye intervenciones que brindan técnicas y hábitos de estudio, citas de seguimiento académico por parte del programa y por la institución educativa, todo nuestro esfuerzo para lograr que ellos permanezcan y
+                logren graduarse de estas instituciones.<br><br> Para el año 2019 la inversión realizada por el Grupo Tecnoquímicas en el proyecto educativo de Villa Rica ascendió a <span>$1.050 millones.</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="../home.html">Inicio</a></span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quienes-somos/quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="../quienes-somos/mision.html">Misión</a></li>
+                            <li><a href="../quienes-somos/vision.html">Visión</a></li>
+                            <li><a href="../quienes-somos/credo.html">Credo TQ</a></li>
+                            <li><a href="../quienes-somos/historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="../investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="../testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="../productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/betterworld.js"></script>
+</body>
+
+</html>

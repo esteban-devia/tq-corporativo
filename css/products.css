@@ -1,0 +1,447 @@
+.productmain {
+    padding: 5rem 8rem;
+    padding-right: 7rem;
+    display: flex;
+    background-color: #F9F9F9;
+}
+
+.productmain h1 {
+    display: none;
+}
+
+.boxleft {
+    width: 48%;
+    margin-right: 1rem;
+}
+
+.filtersmain {
+    background: #EFEFEF;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+}
+
+.filtersmain h2 {
+    font-family: 'NeoSans-B';
+    color: #008ACD;
+    margin: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filtersinner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.search,
+.searchMob {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.searchMob {
+    display: none;
+}
+
+.search input,
+.searchMob input {
+    width: 100%;
+    border: 1px solid #A3A3A3;
+    border-radius: 10px;
+    padding: 0.6rem;
+    padding-left: 3rem;
+    background-color: #FFFFFF;
+    font-family: 'NeoSans-R';
+    font-size: 0.8rem;
+    color: #A3A3A3;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.search input::placeholder,
+.searchMob input::placeholder {
+    color: #A3A3A3;
+}
+
+.filterSelect {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filterSelect select {
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    border: none;
+    font-family: 'NeoSans-R';
+    font-size: 0.8rem;
+    color: #A3A3A3;
+    background-color: #FFFFFF;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.filterSelect img {
+    position: absolute;
+    align-self: center;
+    padding-right: 0.5rem;
+}
+
+.checkbox {
+    margin: 0.5rem 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input {
+    -webkit-appearance: none;
+    padding: 0.5rem;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.checkbox label {
+    font-size: 0.8rem;
+    color: #868686;
+}
+
+.checkbox input:checked {
+    background-color: #0089FF;
+    background-image: url(../imgs/products/checked.svg);
+    background-size: cover;
+    outline: none;
+}
+
+.filters button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    background: #56B1DE;
+    color: #FFFFFF;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: 'NeoSans-B';
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.categories {
+    background: #EFEFEF;
+    border-radius: 10px;
+}
+
+.categoriesinner {
+    margin: 1rem;
+    padding-top: 0.5rem;
+}
+
+.filterTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.filterTitle h2 {
+    font-family: 'NeoSans-B';
+    color: #008ACD;
+}
+
+.filterTitle img {
+    display: none;
+}
+
+.categorylist {
+    font-size: 0.9rem;
+}
+
+.categorytitle {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'NeoSans-B';
+    color: #707070;
+    padding: 1rem 0.5rem;
+    background-image: linear-gradient(to right, #707070 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+    cursor: pointer;
+}
+
+.singlecategory:last-of-type .categorytitle {
+    background-size: 0;
+}
+
+.categorytitle img {
+    margin-left: 0.5rem;
+}
+
+.categoryoptions {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    display: none;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #707070 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
+.categoryoptions.show {
+    display: flex;
+}
+
+.singlecategory:last-of-type .categoryoptions {
+    background-image: none;
+}
+
+.categoryoptions a {
+    color: #A3A3A3;
+    margin: 0.5rem 0;
+}
+
+.categoryoptions a.active {
+    color: #707070;
+}
+
+.boxright h1 {
+    font-family: 'NeoSans-B';
+    font-size: 2.5rem;
+    color: #008ACD;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.productsgrid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productsingle {
+    width: 31%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.productsingle img {
+    width: 9rem;
+    height: auto;
+}
+
+.productsingle p {
+    font-family: 'NeoSans-B';
+    color: #57AFE1;
+    text-align: center;
+}
+
+.filing {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.productsingle a {
+    font-size: 0.8rem;
+    color: #B4B4B4;
+}
+
+.productsingle:hover p {
+    color: #008ACD;
+}
+
+.productsingle:hover .filing {
+    border: 1px solid #2E93D7;
+    border-radius: 5px;
+    padding-bottom: 0.3rem;
+}
+
+.productsingle:hover a {
+    color: #2E93D7;
+}
+
+@media screen and (max-width: 1680px) {
+    .boxleft {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .boxleft {
+        width: 78%;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .filterSelect img {
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .boxleft {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productmain {
+        flex-direction: column;
+        padding: 2rem 3rem;
+        align-items: center;
+    }
+    .productmain h1 {
+        font-family: 'NeoSans-B';
+        font-size: 2rem;
+        color: #56B1DE;
+        display: block;
+        margin: 0;
+        align-self: baseline;
+        margin-bottom: 2rem;
+    }
+    .boxleft {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .search {
+        display: none;
+    }
+    .searchMob {
+        display: block;
+    }
+    .filtersmain,
+    .categoriesinner {
+        padding: 1rem 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .filterTitle img {
+        display: block;
+        margin-right: 1.5rem;
+        width: 15px;
+    }
+    .filtersmain.show,
+    .categoriesinner.show {
+        padding-bottom: 0;
+    }
+    .filtersmain h2,
+    .categoriesinner h2 {
+        margin: 0;
+        margin-left: 1.5rem;
+        color: #6E6E6E;
+    }
+    .filtersmain.show h2,
+    .categoriesinner.show h2 {
+        color: #008ACD;
+        margin-bottom: 2rem;
+    }
+    .filters,
+    .categorylist {
+        display: none;
+        margin-top: 1rem;
+    }
+    .filters.show,
+    .categorylist.show {
+        display: block;
+    }
+    .filtersinner,
+    .categorylist {
+        margin: 0 2rem;
+    }
+    .categorylist {
+        font-size: 1rem;
+    }
+    .filtersinner select,
+    .checkbox label {
+        font-size: 1rem;
+    }
+    .boxright h1 {
+        display: none;
+    }
+    .productsingle {
+        width: 48%;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .productsingle:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .productName {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .filing {
+        border: 1px solid #B4B4B4;
+        border-radius: 5px;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .productmain {
+        padding: 2rem;
+    }
+    .filtersmain h2,
+    .categoriesinner h2 {
+        font-size: 1.3rem;
+    }
+    .productsingle {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .productsingle img {
+        width: 8rem;
+    }
+    .filing {
+        margin: 1rem 0.5rem;
+    }
+    .productsingle a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .productmain {
+        padding: 2rem 1.5rem;
+    }
+    .filing {
+        margin: 0 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .productsingle a {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .productsingle {
+        width: 100%;
+        margin-right: 0;
+    }
+    .productsingle img {
+        width: 10rem;
+    }
+    .filtersmain h2,
+    .categoriesinner h2 {
+        font-size: 1.2rem;
+    }
+}

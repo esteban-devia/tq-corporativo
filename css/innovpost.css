@@ -1,0 +1,215 @@
+.innovPost {
+    margin: 2rem 12rem;
+    margin-bottom: 4rem;
+}
+
+.innovPost h2 {
+    font-family: 'NeoSans-B';
+    font-size: 2.5rem;
+    color: #56B1DE;
+    margin-bottom: 0;
+}
+
+.innovPostdate {
+    font-family: 'NeoSans-M';
+    font-size: 1rem;
+    color: #6E6E6E;
+    margin-bottom: 2.5rem;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    color: #6E6E6E;
+}
+
+.share p {
+    margin-right: 1rem;
+}
+
+.share img {
+    width: 27px;
+    margin-left: 0.5rem;
+}
+
+.innovModule {
+    display: flex;
+    align-items: flex-start;
+    ;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+}
+
+.innovModule.revert {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.innovModule img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 4rem;
+}
+
+.innovModule.revert img {
+    margin-left: 4rem;
+    margin-right: 0;
+}
+
+.innovText {
+    color: #6E6E6E;
+    margin-top: 1rem;
+}
+
+.innovText p {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.innovText span {
+    font-family: 'NeoSans-B';
+    font-size: 1.5rem;
+}
+
+.innovText ul {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.innovText li {
+    line-height: 1.5rem;
+}
+
+.innovText ul li::before {
+    content: "\2022";
+    color: #56B1DE;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.moduleTitle {
+    font-family: 'NeoSans-B';
+    margin-bottom: 2rem;
+}
+
+.moduleTitle h2 {
+    color: #56B1DE;
+    margin-bottom: 0.5rem;
+}
+
+.moduleTitle span {
+    color: #6E6E6E;
+    font-size: 1.5rem;
+}
+
+.moduleTitle img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.innovTextsingle {
+    color: #6E6E6E;
+}
+
+@media screen and (max-width: 1680px) {
+    .innovPost {
+        margin: 2rem 10rem;
+        margin-bottom: 4rem;
+    }
+    .innovModule img {
+        width: 50%;
+    }
+    .innovText p {
+        margin-bottom: 1rem;
+    }
+    .innovText ul {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .innovModule img {
+        width: 48%;
+        margin-right: 3rem;
+    }
+    .innovText {
+        margin-top: 0;
+    }
+    .innovText span,
+    .moduleTitle span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .innovPost {
+        margin: 7rem 10rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .innovPost {
+        margin: 1rem 5rem;
+        margin-bottom: 4rem;
+    }
+    .innovModule {
+        flex-direction: column;
+    }
+    .innovModule.revert {
+        flex-direction: column-reverse;
+    }
+    .innovModule img {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .innovModule.revert img {
+        margin: 0;
+        margin-top: 2rem;
+    }
+    .moduleTitle {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .innovPost {
+        margin: 7rem 2rem;
+        margin-bottom: 4rem;
+    }
+    .innovPost h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .innovPost {
+        margin-top: 1rem;
+    }
+    .innovPostdate {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .innovPost h2 {
+        font-size: 1.7rem;
+    }
+    .innovPostdate {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .innovPost h2 {
+        font-size: 1.5rem;
+    }
+}

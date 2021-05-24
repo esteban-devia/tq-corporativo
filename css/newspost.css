@@ -1,0 +1,160 @@
+.overbannernews {
+    bottom: 5rem;
+}
+
+.newspost {
+    margin: 10rem;
+    margin-bottom: 4rem;
+}
+
+.newspost h1 {
+    font-family: 'NeoSans-B';
+    font-size: 2.5rem;
+    color: #56B1DE;
+    margin-bottom: 0;
+}
+
+.newspostdate {
+    font-family: 'NeoSans-M';
+    font-size: 1rem;
+    color: #6E6E6E;
+    margin-bottom: 2.5rem;
+}
+
+.newsposttext {
+    color: #6E6E6E;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    color: #6E6E6E;
+}
+
+.share p {
+    color: #6E6E6E;
+    margin-right: 1rem;
+}
+
+.share img {
+    width: 27px;
+    margin-left: 0.5rem;
+}
+
+.newsComments {
+    margin-top: 2rem;
+}
+
+.singleComment {
+    display: flex;
+    align-items: end;
+    margin-bottom: 3rem;
+    width: 65%;
+}
+
+.newsSingleComment {
+    margin-left: 3rem;
+}
+
+.newsSingleComment p {
+    margin: 0;
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: #6E6E6E;
+}
+
+.commentname {
+    font-family: 'NeoSans-B';
+    font-size: 1rem;
+}
+
+p.commentemail {
+    color: #C4C4C4;
+}
+
+@media screen and (max-width: 1440px) {
+    .newsSingleComment p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .share img {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .singleComment {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .singleComment img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .share img {
+        width: 22px;
+    }
+    .singleComment img {
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newspost {
+        margin: 9rem 6rem;
+        margin-bottom: 4rem;
+    }
+    .share img {
+        width: 27px;
+    }
+    .singleComment {
+        width: 100%;
+        flex-direction: column;
+    }
+    .singleComment img {
+        width: 94px;
+    }
+    .newsSingleComment {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .newspost {
+        margin: 9rem 3rem;
+        margin-bottom: 4rem;
+    }
+    .newspost h1 {
+        font-size: 2rem;
+    }
+    .newspostdate {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .newspost {
+        margin: 9rem 2rem;
+        margin-bottom: 4rem;
+    }
+    .newspost h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .newspost h1 {
+        font-size: 1.4rem;
+    }
+    .singleComment img {
+        width: 84px;
+    }
+}

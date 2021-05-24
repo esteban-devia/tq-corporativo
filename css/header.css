@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'NeoSans-R';
+    src: url("fonts/neo-sans-std.otf");
+}
+
+@font-face {
+    font-family: 'NeoSans-M';
+    src: url("fonts/neo-sans-std-medium.otf");
+}
+
+@font-face {
+    font-family: 'NeoSans-B';
+    src: url("fonts/neo-sans-std-bold.otf");
+}
+
+html {
+    font-family: 'NeoSans-R';
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+select {
+    -webkit-appearance: none;
+}
+
+#LogoTQ {
+    position: absolute;
+}
+
+.showE {
+    transition: 0.7s;
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+.showE.effect {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.grayBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 0.5rem 2rem;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    color: #C4C4C4;
+}
+
+.socialLinks p {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.socialIcons img {
+    margin: 0 0.5rem;
+    width: 25px;
+}
+
+.corp a {
+    margin: 1rem 0;
+    padding: 0 2rem;
+    color: #C4C4C4;
+    border-right: 2px solid;
+}
+
+.corp a:last-of-type {
+    border: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px;
+    border-bottom-style: double;
+    border-bottom-color: #56B1DE;
+}
+
+.menuItem a {
+    color: #56B1DE;
+    padding: 0 1rem;
+    border-right: 2px solid;
+}
+
+.menuItem:last-of-type a {
+    border-right: none;
+    padding-right: 0;
+}
+
+.menuItem.active {
+    border-bottom: 3px solid #56B1DE;
+}
+
+.menuItem.active a {
+    font-weight: bold;
+}
+
+.menuItem img {
+    margin-left: 0.5rem;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.menuInner {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5.5rem;
+    background-color: #FFFFFF;
+    align-self: flex-end;
+    padding: 0 0.7rem;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0px 5px 10px 0px rgba(110, 110, 110, 0.2);
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.menuInner a {
+    border: none;
+    color: #6E6E6E;
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+
+.menuInner.second {
+    padding: 0 1.3rem;
+}
+
+.menuItem:hover>.menuInner {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.menuItem:hover img {
+    transform: rotate(180deg);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.menuMobile,
+.ham,
+.d-none {
+    display: none;
+}
+
+.back a {
+    color: #6E6E6E;
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+    #LogoTQ {
+        width: 180px;
+    }
+    .grayBar {
+        padding: 0.5rem 2rem;
+    }
+    .menu {
+        margin-right: 4rem;
+    }
+    .socialLinks {
+        margin-left: 11rem;
+    }
+    .socialIcons img {
+        width: 20px;
+    }
+    .menuItem img {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+    .corp a {
+        padding: 0 1rem;
+    }
+    .grayBar {
+        padding-right: 2rem;
+    }
+    .menu {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    #LogoTQ {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+    .socialLinks {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 11px;
+    }
+    #LogoTQ {
+        width: 130px;
+    }
+    .socialIcons img {
+        width: 15px;
+    }
+    .menuInner {
+        padding: 0 1rem;
+    }
+    .menuInner.second {
+        padding: 0 1.5rem;
+    }
+    .showE {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    #LogoTQ {
+        width: auto;
+        margin-left: 1rem;
+    }
+    .grayBar {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .ham {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 6em;
+    }
+    .ham img {
+        margin-right: 4rem;
+    }
+    .menuMobile.d-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .navMobile {
+        background-color: #009CDE;
+        padding: 2rem 5rem;
+        padding-bottom: 0;
+        font-size: 1.3rem;
+    }
+    .navMobile a {
+        color: #FFFFFF;
+        margin-top: 1rem;
+    }
+    .mainMenu {
+        margin-bottom: 2.5rem;
+        color: #FFFFFF;
+    }
+    .mainMenu span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'NeoSans-B';
+    }
+    .menuList {
+        display: none;
+        flex-direction: column;
+        margin-left: 1.2rem;
+    }
+    .menuList span {
+        font-family: 'NeoSans-M';
+    }
+    .mobMenuArrow {
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    .mobMenuArrow.rotate {
+        transform: rotate(180deg);
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    #whoAreWe {
+        margin-top: 1rem;
+    }
+    .menuList div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+    }
+    .menuList.d-flex {
+        display: flex;
+    }
+    .corpMobile {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 5rem;
+        padding-bottom: 1rem;
+        background-color: #F2F2F2;
+    }
+    .corpMobile a {
+        font-family: 'NeoSans-B';
+        font-size: 1.3rem;
+        color: #C4C4C4;
+        margin-bottom: 2rem;
+    }
+    @media screen and (max-height: 375px) {
+        #LogoTQ {
+            width: 90px;
+        }
+        .ham {
+            height: 4.5em;
+        }
+        .ham img {
+            width: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .ham img {
+        margin-right: 3rem;
+    }
+    .navMobile {
+        font-size: 1rem;
+        padding: 3rem 3.5rem;
+    }
+    .corpMobile {
+        padding: 3rem 3.5rem;
+        padding-bottom: 1rem;
+    }
+    .corpMobile a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #LogoTQ {
+        width: 90px;
+    }
+    .ham {
+        height: 4.5em;
+    }
+    .ham img {
+        margin-right: 2.5rem;
+        width: 30px;
+    }
+    .navMobile {
+        padding: 2rem 3rem;
+        padding-bottom: 0;
+    }
+    .corpMobile {
+        padding: 3rem 3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 15px;
+    }
+    .ham {
+        height: 5.5em;
+    }
+    .navMobile {
+        padding: 3rem 3rem;
+        padding-bottom: 0;
+    }
+    .corpMobile {
+        padding: 2.5rem 3rem;
+        padding-bottom: 1rem;
+    }
+}

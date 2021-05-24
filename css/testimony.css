@@ -1,0 +1,230 @@
+.testimonymain {
+    overflow: hidden;
+}
+
+.testimonymainText {
+    font-family: 'NeoSans-B';
+    font-size: 1.2rem;
+    color: #6E6E6E;
+    text-align: center;
+    margin: 3rem;
+    margin-top: 1rem;
+}
+
+.testimonySlider {
+    display: flex;
+    width: 100%;
+    transition: 0.7s;
+}
+
+.testimonysingle {
+    min-width: 25%;
+    margin: 0 0.5rem;
+}
+
+.testimonyimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonydeg {
+    position: relative;
+    bottom: 8rem;
+    padding: 0 2.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.testimonyDesc {
+    display: none;
+}
+
+.testimonydeg:hover {
+    bottom: 16rem;
+    text-align: left;
+    margin-bottom: -9rem;
+}
+
+.testimonydeg:hover .testimonyDesc {
+    display: block;
+}
+
+.testimonyName p {
+    font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.testimonydeg span {
+    font-family: 'NeoSans-B';
+}
+
+.testimonyDesc p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.testimonylink a {
+    color: #FFFFFF;
+    font-family: 'NeoSans-B';
+    text-decoration: underline;
+}
+
+.testimoniesarrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 11rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.testimoniesarrow div {
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.testimoniesarrow img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimoniesarrow div:last-of-type {
+    border-left: 1px solid #56B1DE;
+}
+
+.left {
+    margin-left: -0.5rem;
+}
+
+.right {
+    margin-left: -31.5rem;
+}
+
+@media screen and (max-width: 1680px) {
+    .testimonymainText {
+        margin: 2.5rem;
+        margin-top: 1rem;
+    }
+    .testimonydeg {
+        bottom: 7rem;
+    }
+    .testimonydeg:hover {
+        bottom: 14rem;
+    }
+    .testimonyName p {
+        font-size: 1.5rem;
+    }
+    .testimonyDesc p {
+        font-size: 1.1rem;
+    }
+    .testimonylink a {
+        font-size: 0.8rem;
+    }
+    .testimoniesarrow img {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .testimoniesarrow img {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .testimonymain {
+        margin-top: 5rem;
+    }
+    .testimoniesarrow img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .testimonymainText {
+        margin: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .testimonyDesc p {
+        font-size: 1rem;
+    }
+    .testimonydeg {
+        bottom: 6rem;
+    }
+    .testimonydeg:hover {
+        bottom: 13rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonymain {
+        margin-top: 0rem;
+    }
+    .testimonySlider {
+        margin-left: -0.5rem;
+        margin-bottom: -3rem;
+    }
+    .testimonysingle {
+        min-width: 40%;
+    }
+    .testimonydeg {
+        bottom: 5rem;
+    }
+    .testimonydeg:hover {
+        bottom: 11rem;
+        padding: 0 1.5rem;
+    }
+    .testimonyName p {
+        font-size: 1.2rem;
+    }
+    .testimonyDesc p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .testimonylink a {
+        font-size: 0.7rem;
+    }
+    .testimoniesarrow {
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .testimonymain {
+        margin-top: 5rem;
+    }
+    .testimonySlider {
+        margin-bottom: -2rem;
+    }
+    .testimonysingle {
+        min-width: 55%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .testimonymain {
+        margin-top: 0rem;
+    }
+    .testimonymainText {
+        font-size: 1rem;
+    }
+    .testimonysingle {
+        min-width: 68%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .testimonySlider {
+        margin-bottom: -3rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .testimonySlider {
+        margin-bottom: -2rem;
+    }
+}

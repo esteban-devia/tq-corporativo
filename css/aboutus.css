@@ -1,0 +1,912 @@
+    .mainbanner.aboutus {
+        margin-bottom: -5.1rem;
+    }
+    
+    .sectionmenu.aboutus {
+        margin-top: 4.8rem;
+    }
+    
+    .sectionmenuopt.aboutus {
+        padding: 0 4%;
+    }
+    
+    .whoarewe {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 12%;
+        margin-top: 3rem;
+    }
+    
+    .whoarewe.vision {
+        margin-top: 5rem;
+    }
+    
+    .whoarewe h1,
+    .whoarewe h2 {
+        font-family: 'NeoSans-B';
+        color: #56B1DE;
+        margin-bottom: 0;
+    }
+    
+    .whoarewe p {
+        color: #6E6E6E;
+        line-height: 1.5rem;
+    }
+    
+    .whoareweMod {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    
+    .whoareweMod.revert {
+        flex-direction: row-reverse;
+    }
+    
+    .whoarewe img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 4rem;
+    }
+    
+    .whoareweMod.revert img {
+        margin-right: 0;
+        margin-left: 4rem;
+    }
+    
+    .visiongrid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+    }
+    
+    .visiongrid div {
+        width: 32%;
+    }
+    
+    .visiongrid img {
+        margin-right: 0;
+    }
+    
+    .visiongrid p {
+        margin-top: -2.5rem;
+        padding-left: 2rem;
+        color: #FFFFFF;
+        font-size: 1.3rem;
+    }
+    
+    .CredoSlideMain {
+        display: flex;
+    }
+    
+    .sliderimg {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .credoText {
+        position: relative;
+        bottom: 15.5rem;
+        color: #FFFFFF;
+        margin-left: 15rem;
+        margin-right: 5rem;
+    }
+    
+    .credo {
+        font-size: 1.2rem;
+        margin: 0;
+        color: #FFFFFF;
+    }
+    
+    .credoSecond {
+        margin: 0;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        width: 85%;
+        text-align: left;
+    }
+    
+    .credoText h1 {
+        font-family: 'NeoSans-B';
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .sliderimg.none {
+        display: none;
+    }
+    
+    .credomain img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .credoSlider {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        height: inherit;
+        width: 11rem;
+        padding-right: 2rem;
+        border-right: 1px solid #FFFFFF;
+    }
+    
+    .arrows {
+        margin-top: 6rem;
+    }
+    
+    .arrowsH {
+        display: none;
+    }
+    
+    .prev {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .arrows img {
+        width: 25px;
+    }
+    
+    .next {
+        margin-top: 1.5rem;
+        transform: rotate(180deg);
+        padding-top: 1.5rem;
+        border-top: 1px solid #FFFFFF;
+        cursor: pointer;
+    }
+    
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12rem;
+    }
+    
+    .numbers span {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        margin-bottom: 2rem;
+        opacity: 0.6;
+        text-align: right;
+    }
+    
+    .numbers span:nth-of-type(2n-1) {
+        cursor: pointer;
+    }
+    
+    .numbers span.active {
+        opacity: 1;
+    }
+    
+    .singleyear {
+        font-size: 1.2rem;
+        color: #FFFFFF;
+        margin-bottom: 2rem;
+        text-align: right;
+        cursor: pointer;
+        caret-color: transparent;
+    }
+    
+    .singleyear span {
+        opacity: 0.6;
+    }
+    
+    .singleyear.active span {
+        font-family: 'NeoSans-B';
+        opacity: 1;
+    }
+    
+    .groupdots {
+        display: flex;
+        opacity: 0;
+    }
+    
+    .groupdots.active {
+        opacity: 1;
+    }
+    
+    .historyText.none,
+    .groupdots-mob {
+        display: none;
+    }
+    
+    .singledot {
+        width: 1.5rem;
+        height: 0.5rem;
+        background-color: #FFFFFF;
+        border-radius: 20%;
+        margin: 0 1rem;
+        position: relative;
+        top: 0.3rem;
+        caret-color: transparent;
+    }
+    
+    .groupdots.active>.singledot {
+        cursor: pointer;
+    }
+    
+    .singledot.active {
+        background-color: #009CDE;
+    }
+    
+    #stopSlider {
+        display: none;
+    }
+    /* NEW STYLES HISTORY */
+    
+    .historyMain {
+        display: flex;
+    }
+    
+    .sliderContent {
+        display: flex;
+    }
+    
+    .sliderContent.none {
+        display: none;
+    }
+    
+    .sliderContent img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .sliderText {
+        position: absolute;
+        margin-left: 15rem;
+        margin-right: 5rem;
+        margin-top: 5rem;
+        color: #FFFFFF;
+        max-height: 47%;
+        overflow-y: auto;
+        scrollbar-width: none;
+    }
+    
+    .sliderText::-webkit-scrollbar {
+        width: 2px;
+        background: transparent;
+    }
+    
+    .HistMainText {
+        font-family: 'NeoSans-B';
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .HistSecondText {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+    .HistThirdText {
+        font-size: 1.2rem;
+        color: #FFFFFF;
+    }
+    
+    .historyControls {
+        position: absolute;
+        margin-left: 8rem;
+        display: flex;
+        width: 88%;
+    }
+    
+    .historyLeft {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 2rem;
+        border-right: 1px solid #FFFFFF;
+        padding-top: 5rem;
+    }
+    
+    .playButton {
+        margin-bottom: 4rem;
+        font-family: 'NeoSans-M';
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        cursor: pointer;
+        caret-color: transparent;
+    }
+    
+    .monthYear {
+        display: none;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 1rem;
+        letter-spacing: 2.6px;
+    }
+    
+    .monthYear.active {
+        display: flex;
+    }
+    
+    .monthYear.monthMob {
+        display: none;
+    }
+    
+    .monthYear p {
+        margin: 0.2rem 0;
+    }
+    
+    .monthYear span {
+        width: 1.5rem;
+        height: 0.5rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 20%;
+        margin: 0 0.5rem;
+    }
+    
+    .historyRight {
+        height: inherit;
+        width: 100%;
+        padding-top: 5rem;
+        margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .timeline {
+        width: inherit;
+        border-bottom: 1px solid #FFFFFF;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5rem;
+    }
+    
+    @media screen and (max-width: 1680px) {
+        .whoarewe {
+            margin: 2rem 10%;
+        }
+        .arrows {
+            margin-top: 4rem;
+        }
+        .numbers {
+            margin-top: 10rem;
+        }
+        .credoText {
+            bottom: 14rem;
+        }
+        .credoText h1 {
+            font-size: 3rem;
+        }
+        .years {
+            margin-top: 5.5rem;
+        }
+        .HistMainText {
+            font-family: 'NeoSans-B';
+            font-size: 3rem;
+            line-height: 3rem;
+            text-align: left;
+            margin: 0;
+        }
+    }
+    
+    @media screen and (max-width: 1440px) {
+        .whoarewe img {
+            width: 536px;
+        }
+        .arrows img {
+            width: 22px;
+        }
+        .numbers {
+            margin-top: 12rem;
+        }
+        .years {
+            margin-top: 7.5rem;
+        }
+        .sliderText {
+            max-height: 45%;
+        }
+        .credoText {
+            bottom: 14.5rem;
+        }
+    }
+    
+    @media screen and (max-width: 1366px) {
+        .whoarewe {
+            margin: 2rem 9%;
+        }
+        .sliderText {
+            max-height: 55%;
+        }
+        .numbers {
+            margin-top: 10rem;
+        }
+    }
+    
+    @media screen and (max-width: 1280px) {
+        .whoarewe {
+            margin: 2rem 8%;
+        }
+        .credoSlider {
+            width: 10rem;
+        }
+        .arrows {
+            margin-top: 3rem;
+        }
+        .numbers {
+            margin-top: 9rem;
+        }
+        .credoText {
+            bottom: 14rem;
+            margin-left: 14rem;
+        }
+        .credo {
+            font-size: 1.1rem;
+        }
+        .credoText h1 {
+            font-size: 2.8rem;
+            line-height: 3rem;
+        }
+        .credoSecond {
+            font-size: 1.3rem;
+        }
+        .years {
+            margin-top: 7rem;
+        }
+        .sliderText {
+            max-height: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 1112px) {
+        .whoarewe img {
+            width: 400px;
+        }
+        .arrows img {
+            width: 18px;
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        .sectionmenuopt.aboutus {
+            padding: 0 3.3%;
+        }
+        .whoarewe img {
+            width: 310px;
+        }
+        .numbers {
+            margin-top: 8rem;
+        }
+        .years {
+            margin-top: 5rem;
+        }
+        .credoText {
+            bottom: 13rem;
+        }
+        .sliderText {
+            max-height: 21%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .mainbanner.aboutus {
+            margin-bottom: 5.2rem;
+        }
+        .whoareweMod {
+            flex-direction: column;
+        }
+        .whoarewe img {
+            width: 100%;
+            margin: 0;
+        }
+        .whoareweMod.vision {
+            flex-direction: column-reverse;
+        }
+        .whoareweMod.revert img {
+            margin: 0;
+        }
+        .visiongrid {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            flex-direction: column;
+        }
+        .visiongrid div {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .visiongrid p {
+            margin-top: -3rem;
+            font-size: 1.5rem;
+        }
+        .CredoSlideMain {
+            margin-bottom: 2rem;
+        }
+        .credomain {
+            margin-top: 2rem;
+        }
+        .credoSlider {
+            width: 3rem;
+            padding-right: 1.5rem;
+            margin-top: 2rem;
+        }
+        .prev {
+            padding: 0 0.5rem;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .next {
+            padding: 0 0.5rem;
+            padding-top: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
+        }
+        .numbers {
+            margin-top: 17rem;
+        }
+        .numbers span {
+            font-size: 1.3rem;
+        }
+        .credoText {
+            bottom: 20rem;
+            margin-left: 6rem;
+            margin-right: 2rem;
+        }
+        .credoSecond {
+            width: 90%;
+            font-size: 1.3rem;
+        }
+        .monthYear.monthMob {
+            display: flex;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .monthYear p {
+            margin: 0;
+        }
+        .singleyear {
+            display: flex;
+        }
+        .groupdots-mob {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 3.9rem;
+            opacity: 0;
+        }
+        .groupdots-mob.active {
+            opacity: 1;
+        }
+        .singledot-mob {
+            width: 0.5rem;
+            height: 1.5rem;
+            margin: 0;
+            margin-bottom: 1rem;
+            background-color: #FFFFFF;
+            border-radius: 20%;
+            caret-color: transparent;
+        }
+        .singledot-mob.active {
+            background-color: #009CDE;
+            opacity: 1;
+        }
+        .historyControls {
+            margin-left: 1rem;
+        }
+        .historyLeft {
+            padding-right: 1rem;
+            padding-top: 2rem;
+        }
+        .playButton {
+            display: none;
+        }
+        .arrowsH {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .historyRight {
+            display: none;
+        }
+        .sliderText {
+            margin-left: 6.5rem;
+            margin-right: 2rem;
+            margin-top: 2rem;
+            max-height: 76%;
+            max-width: 80%;
+        }
+        @media screen and (max-height: 540px) {
+            .arrowsH {
+                margin-top: 10rem;
+            }
+            .credoText h1 {
+                font-size: 2.7rem;
+            }
+            .sliderText {
+                max-height: 130%;
+            }
+            .HistMainText {
+                font-size: 2.5rem;
+            }
+        }
+        @media screen and (max-height: 375px) {
+            .numbers {
+                margin-top: 12rem;
+            }
+            .credoText h1 {
+                font-size: 2.3rem;
+            }
+            .credoSecond {
+                font-size: 1.1rem;
+            }
+            .arrowsH {
+                margin-top: 7rem;
+            }
+            .historyText {
+                overflow: auto;
+                max-height: 31rem;
+            }
+        }
+        @media screen and (max-height: 320px) {
+            .numbers {
+                margin-top: 4rem;
+            }
+            .credoText h1 {
+                font-size: 2rem;
+                line-height: 2.2rem;
+                margin: 1rem 0;
+            }
+            .credoSecond {
+                width: 100%;
+            }
+            .years {
+                margin-top: 3rem;
+            }
+            .arrowsH {
+                margin-top: 2rem;
+            }
+            .monthYear {
+                margin-top: 3rem;
+            }
+            .historySlideText h2 {
+                font-size: 2.5rem;
+                line-height: 2.8rem;
+            }
+            .historySlideText p {
+                font-size: 1.2rem;
+            }
+            .historyText {
+                max-height: 28rem;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 540px) {
+        .mainbanner.aboutus {
+            margin-bottom: 0;
+        }
+        .sectionmenu-mob {
+            margin-top: -0.3rem;
+        }
+        .sectionmenu-mob p {
+            line-height: 0.5rem;
+        }
+        .arrows {
+            margin-top: 2rem;
+        }
+        .prev {
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .next {
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .numbers {
+            margin-top: 6.5rem;
+        }
+        .credoText {
+            bottom: 22rem;
+        }
+        .credo {
+            font-size: 1rem;
+        }
+        .credoText h1 {
+            font-size: 1.8rem;
+            line-height: 2rem;
+            margin: 1rem 0;
+        }
+        .credoSecond {
+            width: 90%;
+            font-size: 1.1rem;
+        }
+        .years {
+            margin-top: 3rem;
+        }
+        .monthYear {
+            margin-top: 3rem;
+        }
+        .HistMainText {
+            font-size: 2.2rem;
+            line-height: 2.3rem;
+        }
+        .HistSecondText {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+        .HistThirdText {
+            font-size: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 420px) {
+        .whoarewe p {
+            font-size: 0.9rem;
+        }
+        .visiongrid p {
+            margin-top: -2.5rem;
+            font-size: 1.2rem;
+        }
+        .credoSlider {
+            padding-right: 1rem;
+            width: 2rem;
+        }
+        .arrows {
+            margin-right: -0.5rem;
+        }
+        .numbers span {
+            font-size: 1rem;
+        }
+        .credoText {
+            margin-left: 4rem;
+            bottom: 24rem;
+        }
+        .credo {
+            font-size: 0.9rem;
+        }
+        .credoText h1 {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+        .credoSlideText p {
+            line-height: 1.2rem;
+            font-size: 1rem;
+        }
+        .credoSecond {
+            width: 100%;
+            font-size: 1rem;
+        }
+        .sliderText {
+            margin-left: 5.5rem;
+            max-height: 67%;
+        }
+        .HistMainText {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+        }
+        .HistSecondText {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        .HistThirdText {
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+        }
+        .singleyear {
+            font-size: 1rem;
+        }
+        .monthYear {
+            margin-top: 2.8rem;
+        }
+        .monthYear p {
+            font-size: 0.9rem;
+        }
+        .groupdots-mob {
+            left: 3.35rem;
+        }
+    }
+    
+    @media screen and (max-width: 375px) {
+        .numbers {
+            margin-top: 4rem;
+        }
+        .numbers span {
+            margin-bottom: 1.5rem;
+        }
+        .credoText {
+            bottom: 26rem;
+            margin-right: 1.5rem;
+        }
+        .credoText h1 {
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+        }
+        .years {
+            margin-top: 2rem;
+        }
+        .prev {
+            padding-bottom: 1rem;
+            margin-bottom: 0rem;
+        }
+        .next {
+            padding-top: 1rem;
+            margin-bottom: 0rem;
+            margin-top: 1rem;
+        }
+        .arrowsH {
+            margin-bottom: 1rem;
+        }
+        .monthYear {
+            margin-top: 1.8rem;
+        }
+        .sliderText {
+            margin-right: 1.5rem;
+            max-height: 56%;
+        }
+        .HistMainText {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+        .HistSecondText {
+            font-size: 1rem;
+            line-height: 1.3rem;
+        }
+        .HistThirdText {
+            font-size: 0.7rem;
+            line-height: 1rem;
+        }
+    }
+    
+    @media screen and (max-width: 360px) {
+        .numbers {
+            margin-top: 8.9rem;
+        }
+        .credoSlideText {
+            margin-top: 18rem;
+        }
+        .credoSlideText h1 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        .years {
+            margin-top: 3rem;
+        }
+        .monthYear {
+            margin-top: 2.8rem;
+        }
+        .historySlideText p {
+            font-size: 1rem;
+        }
+        .sliderText {
+            max-height: 70%;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .arrows img {
+            width: 15px;
+        }
+        .numbers {
+            margin-top: 5.9rem;
+        }
+        .credoSlideText {
+            margin-top: 15rem;
+            width: 85%;
+        }
+        .credoSlideText .credo {
+            font-size: 0.8rem;
+        }
+        .credoSlideText h1 {
+            line-height: 1.7rem;
+        }
+        .years {
+            margin-top: 2rem;
+        }
+        .historySlideText p {
+            font-size: 0.9rem;
+            line-height: 1.3rem;
+        }
+        .monthYear {
+            margin-top: 1.8rem;
+        }
+    }

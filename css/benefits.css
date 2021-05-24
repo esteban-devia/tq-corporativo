@@ -1,0 +1,314 @@
+.overBanner {
+    bottom: 14rem;
+}
+
+.mainbanner {
+    margin-bottom: -11.01rem;
+}
+
+.sectionintro {
+    width: 62rem;
+}
+
+.aportsingle {
+    padding: 3rem 3.5rem;
+}
+
+.benefitsDescription {
+    align-items: center;
+    margin: 4rem 12rem;
+    display: flex;
+}
+
+.benefitsDescription.wellness {
+    flex-direction: column;
+}
+
+.benefitsInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.benefitsInner.reverse {
+    flex-direction: row-reverse;
+}
+
+.benefitsText {
+    width: 47%;
+}
+
+.wellness .benefitsText {
+    width: 49%;
+    text-align: justify;
+}
+
+.wellness .benefitsText.education {
+    width: 43%;
+    text-align: justify;
+}
+
+.benefitsText h2 {
+    font-family: 'NeoSans-B';
+    margin: 0;
+    margin-bottom: 0.8rem;
+    color: #56B1DE;
+    text-align: left;
+}
+
+.benefitsText div {
+    display: flex;
+    align-items: baseline;
+}
+
+.benefitsText img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0.2rem;
+}
+
+.wellness .benefitsimg {
+    width: 49%;
+}
+
+.benefitsText p {
+    margin: 0.3rem;
+    color: #6E6E6E;
+    text-align: left;
+}
+
+.wellness .benefitsText p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.benefitsimg {
+    margin: 0;
+    text-align-last: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefitsimg.edphone {
+    align-items: center;
+    width: 45%;
+}
+
+.benefitsimg.edphone iframe {
+    width: -webkit-fill-available;
+    height: 315px;
+}
+
+.benefitsimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.benefitsimg span {
+    align-self: end;
+    margin-top: 0.5rem;
+    color: #6E6E6E;
+}
+
+@media screen and (max-width: 1680px) {
+    .mainbanner {
+        margin-bottom: -9.8rem;
+    }
+    .benefitsDescription {
+        margin: 4rem 10rem;
+    }
+    .benefitsText div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mainbanner {
+        margin-bottom: -9.7rem;
+    }
+    .benefitsimg {
+        width: 65%;
+    }
+    .benefitsimg.icon img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .mainbanner {
+        margin-bottom: -9.75rem;
+    }
+    .aportsingle {
+        padding: 3rem;
+    }
+    .sectionintro {
+        width: 52rem;
+    }
+    .benefitsimg.edphone iframe {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .mainbanner {
+        margin-bottom: -9.8rem;
+    }
+    .benefitsimg.icon img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainbanner {
+        margin-bottom: -9.75rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainbanner {
+        margin-bottom: -9.6rem;
+    }
+    .benefitsimg.icon img {
+        width: 100px;
+    }
+    .benefitsimg.edphone iframe {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aportsgrid {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .aportsingle {
+        padding: 3rem 1rem;
+    }
+    .sectionintro {
+        width: 82%;
+        margin: 0 auto;
+    }
+    .benefitsDescription {
+        margin: 4rem;
+        flex-direction: column;
+    }
+    .wellness .benefitsInner {
+        flex-direction: column;
+    }
+    .benefitsInner.reversemob {
+        flex-direction: column-reverse;
+    }
+    .benefitsText {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .wellness .benefitsText {
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    .wellness .benefitsText.education {
+        width: 100%;
+    }
+    .benefitsText div {
+        width: 100%;
+    }
+    .benefitsimg {
+        width: 100%;
+    }
+    .benefitsimg.icon img {
+        align-self: baseline;
+    }
+    .benefitsimg.edphone iframe {
+        width: 100%;
+        height: 315px;
+    }
+    .wellness .benefitsimg {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .aportsgrid {
+        margin-top: 2rem;
+    }
+    @media screen and (max-height: 540px) {
+        .overBanner {
+            bottom: 11rem;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .mainbanner {
+        margin-bottom: -6.6rem;
+    }
+    .overBanner {
+        bottom: 9rem;
+        margin: 0 2rem;
+    }
+    .textBanner .bannertitle {
+        font-size: 1.5rem;
+    }
+    .aportsgrid {
+        margin-bottom: 1rem;
+    }
+    .benefitsDescription {
+        margin: 4rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .overBanner {
+        bottom: 8.5rem;
+    }
+    .aportsgrid {
+        margin-top: 0rem;
+    }
+    .aportsingle {
+        padding: 1rem;
+    }
+    .benefitsDescription {
+        margin: 2rem 1.5rem;
+    }
+    .benefitsText h2 {
+        font-size: 1.35rem;
+    }
+    .benefitsText p {
+        font-size: 0.9rem;
+    }
+    .benefitsimg span {
+        font-size: 0.8rem;
+    }
+    .benefitsimg.edphone iframe {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .benefitsimg span {
+        font-size: 0.7rem;
+    }
+    .benefitsimg.icon img {
+        width: 90px;
+    }
+    .benefitsimg.edphone iframe {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .benefitsimg span {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .benefitsimg span {
+        font-size: 0.7rem;
+    }
+    .benefitsimg.icon img {
+        width: 80px;
+    }
+}

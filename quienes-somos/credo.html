@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:site" content="">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/betterworld.css">
+    <link rel="stylesheet" href="../css/aboutus.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>Tecnoquímicas - Quiénes Somos</title>
+    <link rel="canonical" href="">
+</head>
+
+<body>
+    <header>
+        <a href="../home.html">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/header/logoTQ-mob.png">
+                <img src="../imgs/header/logoTQ.png" alt="LogoTQ" id="LogoTQ">
+            </picture>
+        </a>
+        <div class="grayBar">
+            <div class="socialLinks">
+                <p>Síguenos</p>
+                <div class="socialIcons">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-grey.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/linkedin-grey.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-grey.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="corp">
+                <a href="">Colaborador TQ</a>
+                <a href="">TQ Farma</a>
+                <a href="">Encuéntranos</a>
+                <a href="">Gobierno Corporativo</a>
+            </div>
+        </div>
+        <nav>
+            <div class="menu">
+                <div class="menuItem">
+                    <a href="../home.html">Inicio</a>
+                </div>
+                <div class="menuItem active">
+                    <a href="#">Así Cambiamos El Mundo<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner second">
+                        <a href="quien-es-tq.html">¿Quiénes somos?</a>
+                        <a href="../nuestro-planeta/cuidado-del-agua.html">Por un mundo mejor</a>
+                        <a href="../investigacion-e-innovacion.html">Investigación e innovación</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="#">Trabaja en TQ<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a>
+                        <a href="../testimonio.html">Testimonio</a>
+                        <a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a>
+                    </div>
+                </div>
+                <div class="menuItem">
+                    <a href="../noticias.html">Noticias</a>
+                </div>
+                <div class="menuItem">
+                    <a href="../productos.html">Nuestros Productos</a>
+                </div>
+                <div class="menuItem">
+                    <a href="">Contacto<img src="../imgs/header/down-arrow.png" alt="menuDownArrow"></a>
+                    <div class="menuInner">
+                        <a href="../contacto/encuentranos.html">Encuéntranos</a>
+                        <a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a>
+                        <a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a>
+                        <a href="../contacto/linea-etica.html">Línea ética</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ham" onclick="openMenu()">
+                <img src="../imgs/header/ham.png" alt="hamburgerMenu">
+            </div>
+            <!-- MOBILE MENU -->
+            <div class="menuMobile">
+                <div class="navMobile">
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(0)">Inicio <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../noticias.html">Noticias</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(1)">Así cambiamos el mundo <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span id="whoAreWe"><a href="quien-es-tq.html">¿Quiénes somos?</a></span>
+                            <div>
+                                <a href="mision.html">Misión</a>
+                                <a href="vision.html">Visión</a>
+                                <a href="credo.html">Credo TQ</a>
+                                <a href="hostoria.html">Historia</a>
+                            </div>
+                            <span id="whoAreWe">Por un mundo mejor </span>
+                            <div>
+                                <a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a>
+                                <a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a>
+                            </div>
+                            <span><a href="../investigacion-e-innovacion.html">Innovación e investigación</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(2)">Trabaja en TQ <img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                            <span><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                            <span><a href="../testimonio.html">Testimonio</a></span>
+                        </div>
+                    </div>
+                    <div class="mainMenu">
+                        <a href="../productos.html"><span>Nuestros productos</span></a>
+                    </div>
+                    <div class="mainMenu">
+                        <span onclick="openMenuList(3)">Contacto<img src="../imgs/header/down-arrow-mob.png" alt="" class="mobMenuArrow"></span>
+                        <div class="menuList">
+                            <span><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                            <span><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                            <span><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                            <span><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="corpMobile ">
+                    <a href=" ">Colaborador TQ</a>
+                    <a href=" ">TQ Farma</a>
+                    <a href=" ">Gobierno Corporativo</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="mainbanner aboutus">
+            <picture>
+                <source media="(max-width: 768px)" srcset="../imgs/betterworld/mundo-mejor-mob.jpg">
+                <img src="../imgs/aboutus/quien-es-tq.jpg" alt="">
+            </picture>
+        </div>
+    </section>
+    <section>
+        <div class="sectionmenu aboutus">
+            <a href="quien-es-tq.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/IsTQ-icon.png" alt="">
+                <p>Quién es TQ</p>
+            </a>
+            <a href="vision.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/vision-icon.png" alt="">
+                <p>Visión</p>
+            </a>
+            <a href="mision.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/mision-icon.png" alt="">
+                <p>Misión</p>
+            </a>
+            <a href="credo.html" class="sectionmenuopt aboutus active">
+                <img src="../imgs/aboutus/credo-icon-active.png" alt="">
+                <p>Credo</p>
+            </a>
+            <a href="historia.html" class="sectionmenuopt aboutus">
+                <img src="../imgs/aboutus/history-icon.png" alt="">
+                <p>Historia</p>
+            </a>
+        </div>
+        <div class="sectionmenu-mob">
+            <div class="sectionmenuopt-mob active" onclick="openBWmenu()">
+                <div>
+                    <img src="../imgs/aboutus/credo-icon-active.png" alt="">
+                    <p>Credo</p>
+                </div>
+                <img src="../imgs/aboutus/down-arrow-white.svg" alt="">
+            </div>
+            <div class="sectionmenulist d-none">
+                <div>
+                    <a href="quien-es-tq.html">
+                        <img src="../imgs/aboutus/IsTQ-icon.png" alt="">
+                        <p>Quién es TQ</p>
+                    </a>
+                    <a href="mision.html">
+                        <img src="../imgs/aboutus/mision-icon.png" alt="">
+                        <p>Misión</p>
+                    </a>
+                    <a href="vision.html">
+                        <img src="../imgs/aboutus/vision-icon.png" alt="">
+                        <p>Visión</p>
+                    </a>
+                    <a href="credo.html" class="active">
+                        <img src="../imgs/aboutus/credo-icon.png" alt="">
+                        <p>Credo</p>
+                    </a>
+                    <a href="historia.html">
+                        <img src="../imgs/aboutus/history-icon.png" alt="">
+                        <p>Historia</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="CredoSlideMain">
+            <div class="credoSlider">
+                <div class="arrows">
+                    <div class="prev" onclick="plusSlide(-1)">
+                        <img src="../imgs/credo/uparrow.png" alt="">
+                    </div>
+                    <div class="next" onclick="plusSlide(1)">
+                        <img src="../imgs/credo/uparrow.png" alt="">
+                    </div>
+                </div>
+                <div class="numbers">
+                    <span class="number" onclick="plusSlide(-1)"></span>
+                    <span class="number"></span>
+                    <span class="number" onclick="plusSlide(1)"></span>
+                    <span class="number"></span>
+                </div>
+            </div>
+            <div class="credomain">
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo01-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo01-mob2.jpg">
+                        <img src="../imgs/credo/credo01.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <p class="credo">Los propietarios y trabajadores de TQ creemos...</p>
+                        <h1>En la responsabilidad</h1>
+                        <p class="credoSecond">como norma que gobierna todas nuestras conductas.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo02-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo02-mob2.jpg">
+                        <img src="../imgs/credo/credo02.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En la verdad</h1>
+                        <p class="credoSecond">se manifiesta al cumplir cada día con los deberes como trabajadores, miembros de familia y buenos ciudadanos.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo03-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo03-mob2.jpg">
+                        <img src="../imgs/credo/credo03.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>Que la solidaridad</h1>
+                        <p class="credoSecond">se manifiesta al cumplir cada día los deberes como trabajadores, miembros de familia y buenos ciudadanos.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo04-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo04-mob2.jpg">
+                        <img src="../imgs/credo/credo04.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En la honestidad, la lealtad, la observancia</h1>
+                        <p class="credoSecond">de estándares éticos y de respeto a las leyes, como valores que fundamentan las relaciones entre nosotros y con nuestros públicos.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo05-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo05-mob2.jpg">
+                        <img src="../imgs/credo/credo05.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En realizar todas las labores</h1>
+                        <p class="credoSecond">con total transparencia, con plena confiabilidad y con políticas serias, igualitarias y de justicia recíproca.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo06-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo06-mob2.jpg">
+                        <img src="../imgs/credo/credo06.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En rechazar toda forma de corrupción</h1>
+                        <p class="credoSecond">frente a organismos o funcionarios públicos y del sector privado, y en que nuestras prácticas de compra y de venta sean transparentes y universales.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo07-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo07-mob2.jpg">
+                        <img src="../imgs/credo/credo07.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En el bienestar del consumidor,</h1>
+                        <p class="credoSecond">razón de ser de todos nuestros esfuerzos, y para quien alcanzamos la más alta calidad de nuestros productos y servicios.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo08-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo08-mob2.jpg">
+                        <img src="../imgs/credo/credo08.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En la comunidad médica y científica</h1>
+                        <p class="credoSecond">y demás profesionales de la salud que defienden la vida, a quienes continuamos entregándoles productos de excelencia para atender a sus pacientes.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo09-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo09-mob2.jpg">
+                        <img src="../imgs/credo/credo09.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En los proveedores y en los clientes,</h1>
+                        <p class="credoSecond">como copartícipes del proceso para satisfacer necesidades a través de mutuas relaciones rentables y sostenibles.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo10-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo10-mob2.jpg">
+                        <img src="../imgs/credo/credo10.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En la responsabilidad</h1>
+                        <p class="credoSecond">con nuestros representados para continuar siendo un asociado confiable que les garantice su desarrollo y consolidación.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo11-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo11-mob2.jpg">
+                        <img src="../imgs/credo/credo11.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En exaltar la dignidad de las personas,</h1>
+                        <p class="credoSecond">respetar su individualidad, reconocer su trabajo y ofrecerles oportunidad para su realización integral.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo12-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo12-mob2.jpg">
+                        <img src="../imgs/credo/credo12.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En el perfeccionamiento de la persona</h1>
+                        <p class="credoSecond">por medio de la educación como forma superior de transmitir los saberes, y en la capacitación y entrenamiento para la aprobación de habilidades como únicos medios para el desarrollo tecnológico, el logro de la excelencia y la competitividad.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo13-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo13-mob2.jpg">
+                        <img src="../imgs/credo/credo13.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En el estímulo de la creatividad</h1>
+                        <p class="credoSecond">y la capacidad de innovación, y en propiciar el trabajo en equipo que genera plena confianza y comunicación inmediata.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo14-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo14-mob2.jpg">
+                        <img src="../imgs/credo/credo14.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En el liderazgo positivo</h1>
+                        <p class="credoSecond">y la flexibilidad para adaptarse a las realidades de un mundo cambiante.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo15-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo15-mob2.jpg">
+                        <img src="../imgs/credo/credo15.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En una cultura corporativa</h1>
+                        <p class="credoSecond">que privilegie la calidad y el servicio como atributos fundamentales que practicamos en todos los procesos.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo16-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo16-mob2.jpg">
+                        <img src="../imgs/credo/credo16.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En hacer buen uso del capital,</h1>
+                        <p class="credoSecond">los recursos y bienes de la compañía, así como de la información interna, y en proteger la propiedad industrial e intelectual.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo17-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo17-mob2.jpg">
+                        <img src="../imgs/credo/credo17.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>Que frente a un conflicto de intereses,</h1>
+                        <p class="credoSecond">el privado cederá ante el interés de la comunidad y el particular ante el de la corporación.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo18-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo18-mob2.jpg">
+                        <img src="../imgs/credo/credo18.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En las instituciones</h1>
+                        <p class="credoSecond">y en la democracia como forma de organización de la sociedad.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo19-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo19-mob2.jpg">
+                        <img src="../imgs/credo/credo19.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En participar en el avance</h1>
+                        <p class="credoSecond">de las comunidades en las que trabajamos y vivimos, en el progreso de nuestro país y en el de las naciones de América Latina.</p>
+                    </div>
+                </div>
+                <div class="sliderimg">
+                    <picture>
+                        <source media="(max-width: 420px)" srcset="../imgs/credo/credo20-mob.jpg">
+                        <source media="(max-width: 768px)" srcset="../imgs/credo/credo20-mob2.jpg">
+                        <img src="../imgs/credo/credo20.jpg" alt="">
+                    </picture>
+                    <div class="credoText">
+                        <h1>En proteger el medio ambiente</h1>
+                        <p class="credoSecond">como el bien que hará posible la vida a otras generaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footermain">
+            <div class="footerMenu">
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(0)">
+                        <span><a href="../home.html">Inicio</a></span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../noticias.html">Noticias</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(1)">
+                        <span>Así cambiamos el mundo</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="quien-es-tq.html">¿Quiénes somos?</a></span>
+                        <ul>
+                            <li><a href="mision.html">Misión</a></li>
+                            <li><a href="vision.html">Visión</a></li>
+                            <li><a href="credo.html">Credo TQ</a></li>
+                            <li><a href="historia.html">Historia</a></li>
+                        </ul>
+                        <span class="footerMenutitle">Por un mundo mejor</span>
+                        <ul>
+                            <li><a href="../nuestro-planeta/cuidado-del-agua.html">Nuestro planeta</a></li>
+                            <li><a href="../nuestra-gente/aporte-al-empleo.html">Nuestra gente</a></li>
+                        </ul>
+                        <span class="footerMenutitle"><a href="../investigacion-e-innovacion.html">Investigación e innovación</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(2)">
+                        <span>Trabaja en TQ</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../ofertas-de-trabajo.html">Ofertas de trabajo</a></span>
+                        <span class="footerMenutitle"><a href="../beneficios/aporte-al-empleo.html">Beneficios TQ</a></span>
+                        <span class="footerMenutitle"><a href="../testimonio.html">Testimonio</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle">
+                        <span><a href="../productos.html">Nuestros productos</a></span>
+                    </div>
+                </div>
+                <div class="footerMenuinner">
+                    <div class="footerTitle" onclick="openFooterList(3)">
+                        <span>Contacto</span><img src="../imgs/header/down-arrow.png" alt="" class="footerArrow">
+                    </div>
+                    <div class="footerList">
+                        <span class="footerMenutitle"><a href="../contacto/servicio-al-cliente.html">Servicio al cliente</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/preguntas-frecuentes.html">Preguntas frecuentes</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/linea-etica.html">Línea ética</a></span>
+                        <span class="footerMenutitle"><a href="../contacto/encuentranos.html">Encuéntranos</a></span>
+                    </div>
+                    <div class="footersocial">
+                        <p>Síguenos</p>
+                        <div class="footerIcons">
+                            <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                            <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                            <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                            <a href="" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legalRights">
+            <div class="footersocialmob">
+                <p>Síguenos</p>
+                <div class="footerIconsmob">
+                    <a href="https://www.linkedin.com/company/tqconfiable" target="_blank"><img src="../imgs/header/linkedin-blue.png" alt="Linkedin"></a>
+                    <a href="https://www.facebook.com/TQConfiable/" target="_blank"><img src="../imgs/header/facebook-blue.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/tqconfiable/?hl=es-la" target="_blank"><img src="../imgs/header/instagram-blue.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/tqconfiable" target="_blank"><img src="../imgs/header/twitter-blue.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCDoeAqs4yBpNziXkhB3EJtA" target="_blank"><img src="../imgs/header/youtube-blue.png" alt="Youtube"></a>
+                </div>
+            </div>
+            <p>© 2020. Tecnoquímicas</p>
+            <p>Todos los derechos reservados</p>
+            <p><a href="">Términos y condiciones</a></p>
+            <p><a href="">Políticas de privacidad</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/betterworld.js"></script>
+    <script src="../js/credo.js"></script>
+</body>
+
+</html>
