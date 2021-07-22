@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
-
     <title>Tecnoquímicas - Inicio</title>
     <link rel="canonical" href="">
 </head>
